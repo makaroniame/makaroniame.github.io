@@ -1,0 +1,46 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+{{ .Content }}
+{{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
+
+{{ range $paginator.Pages.ByPublishDate.Reverse }}
+  <h2 class="post-list {{ if ne .Params.show_summary false }}summary{{ end }}">
+    <a href="{{ .RelPermalink }}">
+      {{ .Title }}
+    </a>
+  </h2>
+  <div class="post-properties-table">
+    <div class="post-properties">
+      <span align="left" class=publish-date>
+         {{ index .Site.Data.daysgr (.Date.Format "02") }}
+         {{ index .Site.Data.monthsgr (.Date.Format "1") }} του
+         {{ .Date.Format "2006"}}
+      </span>
+    </div>
+    <div class="post-properties readtime">
+        Χρόνος Προετοιμασίας: 
+        <span>
+         {{ .ReadingTime }} λεπτάκι{{ if ne .ReadingTime 1 }}α{{ end }}...
+        </span>
+    </div>
+    {{ if .Params.difficulty }}
+    <div class="post-properties difficulty">
+      <div class="difficulty-label">
+        Δυσκολία:
+      </div>
+      {{ range (seq .Params.difficulty) }}
+      <img src="/img/pot.svg" class="img-pot-{{ . }}" alt="X" />
+      {{ end }}
+      <!-- <div style="clear: both;"/> -->
+    </div>
+    {{ end }}
+  </div>
+  {{ if ne .Params.show_summary false }}
+    <span class="summary-text">
+    {{ .Summary }}
+    </span>
+  {{ end }}
+{{ end }}
+{{ template "partials/pagination.html" . }}
+{{ end }}
