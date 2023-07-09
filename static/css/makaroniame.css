@@ -1,0 +1,286 @@
+
+@media only screen and (max-width: 1024px){
+  html
+  {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1920px){
+  html
+  {
+    font-size: 16px;
+  }
+}
+
+/*var(--mushroom): #A37D5E;*/
+
+/* fonts */
+@font-face {
+  font-family: Pecita;
+  src: url('/fonts/pecita-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-size: 10px;
+}
+
+@font-face {
+  font-family: MandysSketchExtended;
+  src: url('/fonts/mandyssketchextended-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Xarrovv;
+  src: url('/fonts/xarrovv-webfont.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* base */
+body,
+.main-and-footer {
+  background-image: url("/img/pasta-doodle3.webp");
+}
+
+.mm-side-container {
+  padding: 2em 1.5em!important;
+}
+
+.mm-sidetitle {
+  margin-top: 2em;
+  font-size: 2em;
+}
+
+.mm-pattern-list {
+  /*font-size: 2em;*/
+}
+
+.mm-pattern {
+  font-size: 2em;
+}
+
+.mm-pattern::before {
+  display:none!important;
+}
+
+.mm-pattern a:focus {
+  outline: none!important;
+  text-decoration: none!important;
+}
+
+.mm-pattern a:hover {
+  outline: none!important;
+  text-decoration: none!important;
+  border-color: #A37D5E;
+  color: #A37D5E;
+}
+
+/* anchors */
+a,
+a:visited,
+a:target,
+a:focus {
+  color: #A37D5E;
+  text-decoration: none!important;
+  border-bottom: 0px;
+  background-image: none!important;
+  font-family: Pecita,sans-serif;
+  font-weight: bold;
+  outline: none!important;
+}
+
+/* navbar */
+nav a,
+nav a:visited {
+  color: #41403e;
+  text-decoration: none;
+}
+
+/* blockquote */
+blockquote {
+  font-style: italic;
+}
+
+/* post list */
+.post-list {
+  font-size: 2em; 
+}
+.summary {
+  margin-bottom: 0.1em; 
+}
+
+
+/* post single */
+.post-title {
+  margin-bottom: 0.1em;
+}
+
+/* toc */
+.toc {
+  padding: 1em;
+  margin-top: 1em;
+}
+.toc h2 {
+  font-size: 1.3em;
+}
+
+html,
+h1,h2,h3,h4,h5 {
+  color: #41403e;
+  font-family: MandysSketchExtended,sans-serif;
+  width: 100%;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+#main {
+  overflow-wrap: break-word;
+  margin-top: 2em;
+}
+
+p {
+  color: #41403e;
+  font-family: Pecita,sans-serif;
+  font-size: 1.5em;
+  word-spacing: -0.1em;
+  line-height: normal;
+
+  font-weight: normal;
+  margin-bottom: 0.9em;
+  margin-top: 0.9em;
+}
+
+.summary-text {
+  font-size: 1em;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.post-properties-table {
+  margin-top: 0.1em;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.post-properties {
+  color: #41403e;
+  font-family: Pecita,sans-serif;
+  font-size: 1.1em;
+  border: none;
+  width: 50%;
+  height: auto;
+  margin-top: 0.0em;
+  padding: 0.5em;
+}
+
+.readtime {
+  font-style: italic;
+  text-align: right;
+}
+
+.publish-date {
+  font-style: italic;
+}
+
+.float-border {
+  /*Like PaperCSS img*/
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  border: 2px solid #41403e;
+  display: block;
+  height: auto;
+}
+
+.index-container {
+  padding-top: 0.0em!important;
+  width: 70%;
+  max-width: 100%!important;
+}
+
+.main-and-footer {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.difficulty {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  align-items: center;
+}
+
+.difficulty-label {
+  /*float: left;*/
+  /*height: 30px;*/
+  margin-right: 1em;  
+}
+
+[class*="img-pot-"] {
+  /*float: left;*/
+  height: 30px;
+
+  border: none;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 1000px){
+  [class*="img-pot-"] {
+    float: left;
+    height: 20px;
+
+    border: none;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 5px;
+  }
+
+  .post-properties-table {
+    /*flex-direction: column;*/
+  }
+
+  .difficulty div {
+    width: 100%;
+    /*flex-direction: column;*/
+  }
+  h1 {
+    font-size: 1.8em; 
+  }
+
+  .index-container {
+    width: 90%;
+    padding: 1em!important;
+  }
+
+  #main {
+    /*padding:0;*/
+  }
+
+  .mm-side-container {
+    background-image: url("/img/pasta-doodle3.webp");
+  }
+
+  .intro, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    background-color: rgba(255,255,255,0.9);
+    border-radius:15px;
+  }
+  .patterns {
+    background-color: rgba(255,255,255,0.9);
+    border-radius:15px;
+    height: auto;
+  }
+}
