@@ -1,0 +1,114 @@
+
+/* base */
+.main-and-footer {
+  background-image: none;
+  background-color: /*#E976A1*/;
+  background-color: #94B1B9;
+
+}
+
+.index-container {
+	width: 60%;
+	background-color: white;
+}
+
+.ds-heading-list {
+	font-size: 2.2em;
+	margin-top: 4em;
+	background-color: rgba(0,0,0,0);
+}
+
+.book-title {
+	font-style: bold;
+}
+
+p[class^="ds-paragraph-"]{
+	margin-top: 3em;
+	align-items: center;
+}
+
+p.ds-paragraph-4 {
+	margin-top: 6em;
+}
+
+div .buy {
+	display: flex;
+	flex-wrap: wrap;
+   	justify-content: space-evenly;
+	align-content: center;
+	text-align: center;
+}
+
+div[class^="buy-"] {
+	background-color: rgba(0,0,0,0);
+}
+
+div.buy-stripe {
+	width: 45%;
+}
+
+div.buy-publisher {
+	width: 25%;
+}
+
+.buy-btn-publisher {
+	background-color: #94B1B9;
+	width: 100%;
+}
+
+.buy-btn-politeia {
+	background-color: #94B1B9;
+}
+
+@media only screen and (max-width: 1000px){
+	img[class^="ds-chapter-"] {
+		max-height: 100%;
+		width: 80%;
+		justify-content: center;
+	}
+
+	.index-container {
+		width: 80%;
+	}
+
+	.ds-heading-back,
+	.ds-heading-front {
+		width: 50%;
+
+	}
+
+	.ds-heading-list {
+		margin-top: 1em;
+	}
+
+	.ds-paragraph-heading {
+		margin-top: 0em;		
+	}
+
+	div.buy-stripe {
+		width: 85%;
+	}
+
+	div.buy-publisher {
+		width: 75%;
+	}
+
+	div.buy-politeia {
+		width: 75%;
+	}
+
+	div.buy-ianos {
+		width: 75%;
+	}
+
+	p[class^="ds-paragraph-"]{
+		margin: 0.5em;
+		width: 95%;
+	}
+
+	.mm-side-container {
+		background-image: none;
+		background-color: #94B1B9;
+	}
+
+}
