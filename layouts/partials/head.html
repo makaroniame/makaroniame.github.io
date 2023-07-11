@@ -65,6 +65,14 @@
       <script type="text/javascript" src="{{ . | relURL }}"></script>
   {{- end }}
 
+  <!-- Inline Custom StyleSheets for pages
+  Based on: https://stackoverflow.com/a/71264769
+  -->
+  {{ range .Resources.Match "*.css" }}
+    <style>{{ .Content | safeCSS }}</style>
+    <!-- <link rel="stylesheet" href="{{ . | absURL }}"> -->
+  {{ end }}
+
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}
     {{ $title = .Site.Title }}
