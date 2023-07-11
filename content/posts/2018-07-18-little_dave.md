@@ -1,9 +1,8 @@
 ---
-author: true
 date: "2018-07-18T00:00:00Z"
 title: Lil' Dave and the Villain (pt. 1)
-type: posts
 url: /little_dave_1/
+difficulty: 1
 ---
 
 "It's nine forty PM and I'm in",

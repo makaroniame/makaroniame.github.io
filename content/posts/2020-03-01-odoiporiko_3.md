@@ -1,9 +1,8 @@
 ---
-author: true
 date: "2020-03-01T00:00:00Z"
 title: Οδοιπορικό Αμβούργο-Βερολίνο-Ψωροκώσταινα (Επαγγελματικό acid trip)
 type: posts
-url: /odoiporiko3/
+difficulty: 2
 ---
 
 ### Λουίτζιζ
