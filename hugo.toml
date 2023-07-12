@@ -14,7 +14,11 @@ navTitleText = ""
 description = "Ένα Μπλόγκ που δε σχετίζεται καθόλου με μακαρόνια"
 moveFooterToHeader = true
 
-custom_css = [ "/css/paper.css", "/css/makaroniame.css" ]
+custom_css = [
+	"/css/paper.css",
+	"/css/makaroniame.css",
+	"/css/animations.css",
+	]
 custom_js = []
 
 [ markup.goldmark.extensions]
