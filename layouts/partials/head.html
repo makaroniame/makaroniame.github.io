@@ -69,8 +69,13 @@
   Based on: https://stackoverflow.com/a/71264769
   -->
   {{ range .Resources.Match "*.css" }}
-    <style>{{ .Content | safeCSS }}</style>
-    <!-- <link rel="stylesheet" href="{{ . | absURL }}"> -->
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
+
+  <!-- Inline Custom JavaScript for pages
+  -->
+  {{ range .Resources.Match "*.js" }}
+    <script lang="javascript" src="{{ .RelPermalink }}"></script>
   {{ end }}
 
   {{ $title := print .Title " | " .Site.Title }}

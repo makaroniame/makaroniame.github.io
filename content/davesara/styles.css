@@ -1,6 +1,11 @@
 
 /* base */
+html {
+	scroll-behavior: smooth;
+}
+
 .main-and-footer {
+  /*background-image: url("/img/pages/davesara/background.png");*/
   background-image: none;
   background-color: /*#E976A1*/;
   background-color: #94B1B9;
@@ -12,10 +17,61 @@
 	background-color: white;
 }
 
+.ds-container {
+	display: flex;
+    flex-direction: column;
+}
+
+.ds-animation {
+    flex-wrap: wrap;
+    align-content: center
+	justify-content: center;
+}
+
+/* heading and chapters */
 .ds-heading-list {
 	font-size: 2.2em;
 	margin-top: 4em;
 	background-color: rgba(0,0,0,0);
+}
+
+div[class^= "ds-chapter-"] {
+    flex-wrap: wrap;
+	display: flex;
+    flex-direction: row;
+   	justify-content: space-evenly;
+	/*justify-content: center;*/
+}
+
+img[class^="ds-chapter-"] {
+	max-height: 100%;
+	width: 40%;
+}
+
+.ds-chapter-heading {
+    justify-content: left;
+}
+
+.ds-heading-back {
+	float: left;
+	width: 38%;
+	max-height: 100%;
+	margin-top: -1em;
+	margin-bottom: 1em;
+	margin-right: -1em;
+}
+
+.ds-heading-front {
+	float: right;
+	width: 38%;
+	max-height: 100%;
+	margin-top: 1em;
+	margin-bottom: -1em;
+}
+
+.ds-heading-p {
+	float: left;
+	padding: 2em;
 }
 
 .book-title {
@@ -27,11 +83,15 @@ p[class^="ds-paragraph-"]{
 	align-items: center;
 }
 
+[class^="ds-paragraph-n"] {
+	width: 40%;
+}
+
 p.ds-paragraph-4 {
 	margin-top: 6em;
 }
 
-div .buy {
+div .ds-buy {
 	display: flex;
 	flex-wrap: wrap;
    	justify-content: space-evenly;
@@ -39,27 +99,28 @@ div .buy {
 	text-align: center;
 }
 
-div[class^="buy-"] {
+div[class^="ds-buy-"] {
 	background-color: rgba(0,0,0,0);
 }
 
-div.buy-stripe {
+div.ds-buy-stripe {
 	width: 45%;
 }
 
-div.buy-publisher {
+div.ds-buy-publisher {
 	width: 25%;
 }
 
-.buy-btn-publisher {
+.ds-buy-btn-publisher {
 	background-color: #94B1B9;
 	width: 100%;
 }
 
-.buy-btn-politeia {
+.ds-buy-btn-politeia {
 	background-color: #94B1B9;
 }
 
+/* mobile version */
 @media only screen and (max-width: 1000px){
 	img[class^="ds-chapter-"] {
 		max-height: 100%;
@@ -85,19 +146,19 @@ div.buy-publisher {
 		margin-top: 0em;		
 	}
 
-	div.buy-stripe {
+	div.ds-buy-stripe {
 		width: 85%;
 	}
 
-	div.buy-publisher {
+	div.ds-buy-publisher {
 		width: 75%;
 	}
 
-	div.buy-politeia {
+	div.ds-buy-politeia {
 		width: 75%;
 	}
 
-	div.buy-ianos {
+	div.ds-buy-ianos {
 		width: 75%;
 	}
 
