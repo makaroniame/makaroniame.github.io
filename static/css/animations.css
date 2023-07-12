@@ -1,0 +1,27 @@
+
+@keyframes slideFromLeft {
+	from {
+		transform: translateX(-20em);
+		opacity: 20%;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 100%;
+	}
+}
+
+@keyframes slideFromRight {
+	from {
+		transform: translateX(40em);
+		opacity: 20%;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 100%;
+	}
+}
+
+.mm-animated-left {animation: slideFromLeft 1s ease-in-out;}
+.mm-animated-right {animation: slideFromRight 1s ease-in-out;}
