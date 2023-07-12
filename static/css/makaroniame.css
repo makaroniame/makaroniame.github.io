@@ -270,6 +270,15 @@ p {
     background-image: url("/img/pasta-doodle3.webp");
   }
 
+  .mm-sidetitle {
+    margin-top: 1em;
+    font-size: 2em;
+  }
+
+  #menu-button {
+    margin-bottom: 0;
+  }
+  
   .intro, footer {
     display: flex;
     flex-direction: column;
