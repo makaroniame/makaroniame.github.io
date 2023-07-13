@@ -1,22 +1,4 @@
 
-/* base */
-html {
-	scroll-behavior: smooth;
-}
-
-.main-and-footer {
-  /*background-image: url("/img/pages/davesara/background.png");*/
-  background-image: none;
-  background-color: /*#E976A1*/;
-  background-color: #94B1B9;
-
-}
-
-.index-container {
-	width: 60%;
-	background-color: white;
-}
-
 .ds-container {
 	display: flex;
     flex-direction: column;
@@ -24,20 +6,14 @@ html {
 
 .ds-animation {
     flex-wrap: wrap;
-    align-content: center
-	justify-content: center;
+	justify-content: left;
 }
 
 /* heading and chapters */
-.ds-heading-list {
-	font-size: 2.2em;
-	margin-top: 4em;
-	background-color: rgba(0,0,0,0);
-}
 
 div[class^= "ds-chapter-"] {
-    flex-wrap: wrap;
 	display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
    	justify-content: space-evenly;
 	/*justify-content: center;*/
@@ -45,79 +21,61 @@ div[class^= "ds-chapter-"] {
 
 img[class^="ds-chapter-"] {
 	max-height: 100%;
-	width: 40%;
+	align-items: center;
+	width: 35%;
 }
 
-.ds-chapter-heading {
+div.ds-chapter-heading {
     justify-content: left;
 }
 
-.ds-heading-back {
+ul.ds-heading-list {
+	font-size: 2.2em;
+	margin-top: 2em;
+	background-color: rgba(0,0,0,0);
+	width: 25%;
+	max-height: 100%;
+}
+
+img.ds-heading-back {
 	float: left;
-	width: 38%;
+	width: 36%;
 	max-height: 100%;
 	margin-top: -1em;
 	margin-bottom: 1em;
 	margin-right: -1em;
 }
 
-.ds-heading-front {
+img.ds-heading-front {
 	float: right;
-	width: 38%;
+	width: 36%;
 	max-height: 100%;
 	margin-top: 1em;
 	margin-bottom: -1em;
 }
 
-.ds-heading-p {
+p.ds-heading-p {
 	float: left;
 	padding: 2em;
 }
 
-.book-title {
+span.book-title {
 	font-style: bold;
 }
 
 p[class^="ds-paragraph-"]{
 	margin-top: 3em;
-	align-items: center;
+	align-items: left;
+	width: 40%;
 }
 
-[class^="ds-paragraph-n"] {
+p[class^="ds-paragraph-n"] {
+	float: left;
 	width: 40%;
 }
 
 p.ds-paragraph-4 {
 	margin-top: 6em;
-}
-
-div .ds-buy {
-	display: flex;
-	flex-wrap: wrap;
-   	justify-content: space-evenly;
-	align-content: center;
-	text-align: center;
-}
-
-div[class^="ds-buy-"] {
-	background-color: rgba(0,0,0,0);
-}
-
-div.ds-buy-stripe {
-	width: 45%;
-}
-
-div.ds-buy-publisher {
-	width: 25%;
-}
-
-.ds-buy-btn-publisher {
-	background-color: #94B1B9;
-	width: 100%;
-}
-
-.ds-buy-btn-politeia {
-	background-color: #94B1B9;
 }
 
 /* mobile version */
@@ -126,10 +84,6 @@ div.ds-buy-publisher {
 		max-height: 100%;
 		width: 80%;
 		justify-content: center;
-	}
-
-	.index-container {
-		width: 80%;
 	}
 
 	.ds-heading-back,
@@ -146,30 +100,9 @@ div.ds-buy-publisher {
 		margin-top: 0em;		
 	}
 
-	div.ds-buy-stripe {
-		width: 85%;
-	}
-
-	div.ds-buy-publisher {
-		width: 75%;
-	}
-
-	div.ds-buy-politeia {
-		width: 75%;
-	}
-
-	div.ds-buy-ianos {
-		width: 75%;
-	}
-
 	p[class^="ds-paragraph-"]{
 		margin: 0.5em;
 		width: 95%;
-	}
-
-	.mm-side-container {
-		background-image: none;
-		background-color: #94B1B9;
 	}
 
 }

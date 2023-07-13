@@ -1,0 +1,49 @@
+
+div .ds-buy {
+	display: flex;
+	flex-wrap: wrap;
+   	justify-content: space-evenly;
+	align-content: center;
+	text-align: center;
+}
+
+div[class^="ds-buy-"] {
+	background-color: rgba(0,0,0,0);
+}
+
+div.ds-buy-stripe {
+	width: 45%;
+}
+
+div.ds-buy-publisher {
+	width: 25%;
+}
+
+.ds-buy-btn-publisher {
+	background-color: #94B1B9;
+	width: 100%;
+}
+
+.ds-buy-btn-politeia {
+	background-color: #94B1B9;
+}
+
+/* mobile version */
+@media only screen and (max-width: 1000px){
+
+	div.ds-buy-stripe {
+		width: 85%;
+	}
+
+	div.ds-buy-publisher {
+		width: 75%;
+	}
+
+	div.ds-buy-politeia {
+		width: 75%;
+	}
+
+	div.ds-buy-ianos {
+		width: 75%;
+	}
+}
