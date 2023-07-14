@@ -18,8 +18,12 @@ custom_css = [
 	"/css/paper.css",
 	"/css/makaroniame.css",
 	"/css/animations.css",
+	"/css/text-vide.css",
 	]
-custom_js = []
+custom_js = [
+	"/js/text-vide.1.6.2.min.js",
+	"/js/text-vide.control.js",
+]
 
 [ markup.goldmark.extensions]
     table = true
