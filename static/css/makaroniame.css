@@ -251,21 +251,13 @@ label[for="themer"]{
   border-radius: 0;
   width: 0;
 }
-/*
-input.vh {
-  position: fixed;
-}
-*/
-#themer-img {
-  width: 30%;
-}
 
-#text-vide-img {
-  width: 30%;
+.footer-option-img {
+  width: 33%;
+  margin: 0;
 }
 
 .footer-option-div{
-   align-self: center;
    width: 50%;
    margin: 0;
    display: flex;
@@ -278,7 +270,7 @@ input.vh {
 
 .footer-option-text{
   font-size: 0.8em;
-  flex-grow: 1;
+  margin: 0;
 }
 
 @media only screen and (max-width: 1000px){
@@ -344,4 +336,7 @@ input.vh {
     background-color: rgba(255,255,255,0);
   }
 
+  div.footer-option-text{
+    font-size: 1.3em;
+  }
 }
