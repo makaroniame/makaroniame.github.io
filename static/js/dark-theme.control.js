@@ -4,7 +4,7 @@ if (localStorage.getItem(DARK_THEME_KEY) == null)
 
 function initToggleDarkTheme() {
 	darkThemeBtn = document.querySelector("div#themer-btn")
-	document.getElementById('darkTheme').disabled = JSON.parse(localStorage.getItem(DARK_THEME_KEY))
+	document.getElementById('darkTheme').disabled = !JSON.parse(localStorage.getItem(DARK_THEME_KEY))
 
 	darkThemeBtn.onclick = () => {
 		enabled = JSON.parse(localStorage.getItem(DARK_THEME_KEY))
