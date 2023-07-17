@@ -20,12 +20,15 @@ custom_css = [
 	"/css/animations.css",
 	"/css/text-vide.css",
 	]
+
 custom_js = [
 	"/js/text-vide.1.6.2.min.js",
 	"/js/text-vide.control.js",
+	"/js/dark-theme.control.js",
+	"/js/onload.js",
 ]
 
-[ markup.goldmark.extensions]
+[ markup.goldmark.extensions ]
     table = true
 
 [[menu.nav]]

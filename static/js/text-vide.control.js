@@ -1,6 +1,13 @@
 // has to be styled in /css/text-vide.css
 TEXTVIDE_CLASS_NAME = "text-vide";
-window.TEXTVIDE_STATE = false;
+TEXTVIDE_KEY = "text-vide";
+if (localStorage.getItem(TEXTVIDE_KEY) == null)
+	localStorage.setItem(TEXTVIDE_KEY, false);
+
+TEXTVIDE_TAGS = {
+	"open": `<span class="${TEXTVIDE_CLASS_NAME}">`,
+	"close": `</span><!-- ${TEXTVIDE_CLASS_NAME} -->`,
+}
 
 function applyTextVide(set=true){
 	const paragraphs = document.querySelectorAll("p");
@@ -10,8 +17,8 @@ function applyTextVide(set=true){
 				element.innerHTML = textVide(
 					element.innerHTML, {
 						sep: [
-							`<span class="${TEXTVIDE_CLASS_NAME}">`,
-							`</span><!-- ${TEXTVIDE_CLASS_NAME} -->`
+							TEXTVIDE_TAGS["open"],
+							TEXTVIDE_TAGS["close"],
 						],
 						fixationPoint: 5,
 						ignoreHtmlTag: true,
@@ -19,22 +26,25 @@ function applyTextVide(set=true){
 				)
 			} else {
 				element.innerHTML = element.innerHTML.replaceAll(
-					`</span><!-- ${TEXTVIDE_CLASS_NAME} -->`,
+					TEXTVIDE_TAGS["close"],
 					'');
 				element.innerHTML = element.innerHTML.replaceAll(
-					`<span class="${TEXTVIDE_CLASS_NAME}">`,
+					TEXTVIDE_TAGS["open"],
 					'');
 				}
 			}
 		);
 }
 
-window.onload = () => {
+function initToggleTextVide() {
 	// Get in all paragraphs and do TextVide
-	textVideBtn = document.querySelector("div#text-vide")
+	textVideBtn = document.querySelector("div#text-vide-btn")
+
+	applyTextVide(JSON.parse(localStorage.getItem(TEXTVIDE_KEY)))
 	textVideBtn.onclick = () => {
-		window.TEXTVIDE_STATE = !window.TEXTVIDE_STATE
-		console.log(window.TEXTVIDE_STATE)
-		applyTextVide(window.TEXTVIDE_STATE);
+		enabled = JSON.parse(localStorage.getItem(TEXTVIDE_KEY))
+		localStorage.setItem(TEXTVIDE_KEY, !enabled)
+		applyTextVide(!enabled);
+		console.log(`Text-Vide: ${!enabled}`)
 	}
 };
