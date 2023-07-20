@@ -1,0 +1,20 @@
+.page {
+     position: relative;
+     page-break-before: always;
+     page-break-after: always;
+     page-break-inside: avoid;
+
+     counter-increment: page;
+}
+
+/*page numbers*/
+div.page:after {
+     font-family: MandysSketchExtended;
+     content: counter(page);
+     position: absolute;
+     bottom: 0.5em;
+     right: 50%;
+     font-size: 1em;
+     z-index: 999;
+     /*padding: 2px 12px;*/
+}

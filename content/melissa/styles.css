@@ -1,0 +1,131 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+.main-and-footer {
+  background-image: url("/img/pages/melisses/bee-bg3.webp");
+}
+
+.index-container {
+  width: 90%;
+}
+
+.bt-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+.bt-double-page {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+[class^="bt-page"] {
+	/* Could multiply width and height with some factor */
+	/* 28 Χ 21 (X1.15) fairytale page size */
+    width: 32.2em;
+	height: 24.15em;
+    padding: 0.25em 0em 0em 1em;
+    margin: 1em 0em 1em 0em;
+    word-wrap: break-word;
+    /*margin: 1em 1em 1em 1em;*/
+}
+
+[class^="bt-page-"] {
+	border-width: 0.3em;
+}
+
+.bt-page-red {
+	border-color: red;
+	border-width: 0.3em;
+}
+
+.bt-page-blue {
+	border-color: blue;
+	border-width: 0.3em;
+}
+
+.bt-paragraph {
+	width: 90%;
+	font-size: 1.4em;
+	margin-top: 0.6em;
+}
+
+[id^="bt-p-"] {
+	position: absolute;
+}
+
+#bt-p-1 {
+	 /*Position it freely with the sketch */
+/*	top: 20em;
+	left: -10em;*/
+}
+
+#bt-p-26 {
+	text-align: center;
+}
+
+.bt-span-red {
+	color: red;
+	font-weight: bold;
+}
+
+.bt-span-blue {
+	color: blue;
+	font-weight: bold;
+}
+
+.bt-span-honey {
+	font-style: italic;
+}
+
+.bt-span-quote {
+	font-style: italic;
+	font-size: 1.2em	
+}
+
+.bt-emphasis {
+	font-weight: bolder;
+}
+
+.bt-explanation {
+	font-family: Xarrovv;
+	font-size: 0.8em;
+	font-style: italic;
+	font-weight: lighter;
+}
+
+
+@media only screen and (max-width: 1024px){
+
+	[class^="bt-page"] {
+		padding-top: 0em;
+		padding-left: 0.6em;
+		padding-right: 0em;
+
+		width: 98%;
+		height: 31.5em;
+	}
+
+	.bt-paragraph {
+		width: 92%;
+		font-size: 1.3em;
+	}
+
+	.index-container {
+		width: 92%;
+	}
+
+	.mm-side-container {
+	  background-image: url("/img/pages/melisses/bee-bg3.webp");
+	}
+}
+
