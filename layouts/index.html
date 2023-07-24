@@ -21,7 +21,11 @@
     <div class="post-properties readtime">
         Χρόνος Προετοιμασίας: 
         <span>
+         {{ if .Params.readingTime }}
+         {{ .Params.readingTime }} λεπτάκι{{ if ne .Params.readingTime 1 }}α{{ end }}...
+         {{ else }}
          {{ .ReadingTime }} λεπτάκι{{ if ne .ReadingTime 1 }}α{{ end }}...
+         {{ end }}
         </span>
     </div>
     {{ if .Params.difficulty }}
