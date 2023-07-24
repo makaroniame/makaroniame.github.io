@@ -6,7 +6,11 @@
 
 {{ range $paginator.Pages.ByPublishDate.Reverse }}
   <h2 class="post-list {{ if ne .Params.show_summary false }}summary{{ end }}">
+    {{ if .Params.redirect }}
+    <a href="{{ .Params.redirect }}">
+    {{ else }} 
     <a href="{{ .RelPermalink }}">
+    {{ end }}
       {{ .Title }}
     </a>
   </h2>
