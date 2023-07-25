@@ -5,6 +5,8 @@ defaultContentLang = "gr"
 title = 'Μακαρόνια με...'
 theme = 'cupper-hugo-theme'
 copyright = ''
+disableAliases = false
+
 
 [permalinks]
   posts = '/:title/'
@@ -13,6 +15,7 @@ copyright = ''
 navTitleText = ""
 description = "Ένα Μπλόγκ που δε σχετίζεται καθόλου με μακαρόνια"
 moveFooterToHeader = true
+googleAnalyticsID = "G-RMBG2TDS3X"
 
 custom_css = [
 	"/css/paper.css",

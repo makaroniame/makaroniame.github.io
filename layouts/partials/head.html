@@ -78,6 +78,10 @@
     <script lang="javascript" src="{{ .RelPermalink }}"></script>
   {{ end }}
 
+  {{ if .Site.Params.googleAnalyticsID }}
+  {{ partial "analytics-gtag.html" . }}
+  {{ end }}
+
   {{ $title := print .Title " | " .Site.Title }}
   {{ if .IsHome }}
     {{ $title = .Site.Title }}
