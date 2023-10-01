@@ -59,7 +59,7 @@ name = "Επικοινωνία"
 url = "/epikoinwnia/"
 weight = 5
 
-#[[menu.nav]]
-#name = "Άρεσές"
-#url = "/index.xml"
-#weight = 6
+[[menu.nav]]
+name = "Άρεσές"
+url = "/rss"
+weight = 6
