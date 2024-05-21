@@ -1,0 +1,54 @@
+{{ define "main" }}
+  <main id="main">
+    <h1>{{ .Title }}</h1>
+    <div id="post-date" class="mm-post-date">
+      <span align="left" class=publish-date>
+         {{ index .Site.Data.daysgr (.Date.Format "02") }}
+         {{ index .Site.Data.monthsgr (.Date.Format "1") }} του
+         {{ .Date.Format "2006"}}
+      </span>
+    </div>
+    {{ .Content }}
+  </main>
+
+  <!-- Inline Custom StyleSheets for pages
+  Based on: https://stackoverflow.com/a/71264769
+  -->
+  {{ range .Resources.Match "*.css" }}
+    <link rel="stylesheet" href="{{ .RelPermalink }}">
+  {{ end }}
+
+  <!-- Inline Custom JavaScript for pages
+  -->
+  {{ range .Resources.Match "*.js" }}
+    <script lang="javascript" src="{{ .RelPermalink }}"></script>
+  {{ end }}
+
+  </div>
+
+
+  <div id="post-footer" class="mm-post-footer">
+
+    {{ if .Next }}
+    <div id="post-footer-next" class="mm-post-footer-div float-border">
+    <a
+    href="{{ .Next.Permalink }}">
+      ↜
+      {{ .Next.Title }}
+    </a>
+    </div>
+    {{ end }}
+
+    {{ if .Prev }}
+    <div id="post-footer-prev" class="mm-post-footer-div float-border">
+    <a
+    href="{{ .Prev.Permalink }}">
+      {{ .Prev.Title }}
+      ↝
+    </a>
+    </div>
+    {{ end }}
+
+  </div>
+
+{{ end }}
