@@ -1,0 +1,11 @@
+{{ $readingTime := false }}
+
+{{ if .Params.readingTime }}
+	{{ $readingTime = .Params.readingTime }}
+{{ else if .ReadingTime }}
+	{{ $readingTime = .ReadingTime }}
+{{ end }}
+
+{{ if $readingTime }}
+	{{ $readingTime }} λεπτάκι{{ if ne $readingTime 1 }}α{{ end }}...
+{{ end }}

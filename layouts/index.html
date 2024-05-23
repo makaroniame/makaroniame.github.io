@@ -17,9 +17,7 @@
   <div class="post-properties-table">
     <div class="post-properties">
       <span align="left" class=publish-date>
-         {{ index .Site.Data.daysgr (.Date.Format "02") }}
-         {{ index .Site.Data.monthsgr (.Date.Format "1") }} του
-         {{ .Date.Format "2006"}}
+         {{ partial "custom/date.html" . }}
       </span>
     </div>
     <div class="post-properties readtime">
