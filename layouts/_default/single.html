@@ -39,12 +39,9 @@
       {{ .Next.Title }}
       <br>
         <span class="post-properties readtime">
-         {{ if .Next.Params.readingTime }}
-         {{ .Next.Params.readingTime }} λεπτάκι{{ if ne .Next.Params.readingTime 1 }}α{{ end }}...
-         {{ else }}
-         {{ .Next.ReadingTime }} λεπτάκι{{ if ne .Next.ReadingTime 1 }}α{{ end }}...
-         {{ end }}
+         {{ partial "custom/readingtime.html" .Next }}
        </span>
+
       </a>
     </div>
     {{ end }}
@@ -56,11 +53,7 @@
       {{ .Prev.Title }}
       <br>
         <span class="post-properties readtime">
-         {{ if .Prev.Params.readingTime }}
-         {{ .Prev.Params.readingTime }} λεπτάκι{{ if ne .Prev.Params.readingTime 1 }}α{{ end }}...
-         {{ else }}
-         {{ .Prev.ReadingTime }} λεπτάκι{{ if ne .Prev.ReadingTime 1 }}α{{ end }}...
-         {{ end }}
+        {{ partial "custom/readingtime.html" .Prev }}
        </span>
       ↝
     </a>
