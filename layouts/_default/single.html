@@ -1,6 +1,7 @@
 {{ define "main" }}
   <main id="main">
     <h1>{{ .Title }}</h1>
+    {{ if eq (.Date.Format "2006") 0001}}
     <div id="post-date" class="mm-post-date">
       <span align="left" class=publish-date>
          {{ index .Site.Data.daysgr (.Date.Format "02") }}
@@ -8,6 +9,7 @@
          {{ .Date.Format "2006"}}
       </span>
     </div>
+    {{ end }}
     {{ .Content }}
   </main>
 
