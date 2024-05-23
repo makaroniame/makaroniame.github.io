@@ -33,11 +33,19 @@
 
     {{ if .Next }}
     <div id="post-footer-next" class="mm-post-footer-div float-border">
-    <a
-    href="{{ .Next.Permalink }}">
+      <a
+      href="{{ .Next.Permalink }}">
       ↜
       {{ .Next.Title }}
-    </a>
+      <br>
+        <span class="post-properties readtime">
+         {{ if .Next.Params.readingTime }}
+         {{ .Next.Params.readingTime }} λεπτάκι{{ if ne .Next.Params.readingTime 1 }}α{{ end }}...
+         {{ else }}
+         {{ .Next.ReadingTime }} λεπτάκι{{ if ne .Next.ReadingTime 1 }}α{{ end }}...
+         {{ end }}
+       </span>
+      </a>
     </div>
     {{ end }}
 
@@ -46,6 +54,14 @@
     <a
     href="{{ .Prev.Permalink }}">
       {{ .Prev.Title }}
+      <br>
+        <span class="post-properties readtime">
+         {{ if .Prev.Params.readingTime }}
+         {{ .Prev.Params.readingTime }} λεπτάκι{{ if ne .Prev.Params.readingTime 1 }}α{{ end }}...
+         {{ else }}
+         {{ .Prev.ReadingTime }} λεπτάκι{{ if ne .Prev.ReadingTime 1 }}α{{ end }}...
+         {{ end }}
+       </span>
       ↝
     </a>
     </div>
