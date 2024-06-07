@@ -1,0 +1,30 @@
+<!-- 
+Taken and modified from:
+	https://blog.douchi.space/hugo-random-post-en/#gsc.tab=0
+ -->
+<script>
+
+  RANDOM_ANCHOR_ID = "post-footer-random-anchor"
+
+  function goToRandomPost() {
+    const pages = [
+      {{ range (where site.RegularPages "Type" "posts") }}
+      {
+      	"url":"{{ .RelPermalink }}?utm_source=random",
+      	"title":"{{ .Title }}",
+      	"readingTime":"{{ partial "custom/readingtime.html" . }}",	
+      	"type":"{{ .Type }}",
+      	},
+      {{ end -}}
+    ];
+    const rand = Math.floor(Math.random() * pages.length);
+    return pages[rand]
+  }
+
+var random_post = goToRandomPost()
+document.getElementById(RANDOM_ANCHOR_ID).href = random_post["url"]
+document.getElementById("post-footer-random-title").textContent = random_post["title"]
+document.getElementById("post-footer-random-readingtime").textContent = random_post["readingTime"]
+
+</script>
+

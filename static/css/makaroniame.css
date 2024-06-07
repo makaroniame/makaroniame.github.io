@@ -285,6 +285,7 @@ div.mm-post-footer {
 
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   vertical-align: center;
 
@@ -305,6 +306,10 @@ div.mm-post-footer-div {
   padding: 0.25em;
 }
 
+div#post-footer-random {
+  width: 70%;
+  margin-top: 0.5em;
+}
 
 
 @media only screen and (max-width: 1000px){
