@@ -7,6 +7,7 @@ Taken and modified from:
 const pages = [
 {{ range (where site.RegularPages "Type" "posts") }}
 	{
+
 	"url":"{{ .RelPermalink }}?utm_source=random",
 	"title":"{{ .Title }}",
 	"readingTime":"{{ partial "custom/readingtime.html" . }}",
