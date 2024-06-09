@@ -154,6 +154,12 @@ p {
   margin-top: 0.9em;
 }
 
+code {
+  font-family: Xarrovv,sans-serif;
+  font-size: 0.7em;
+  line-height: normal;
+}
+
 .summary-text {
   font-size: 1em;
   font-weight: 400;
