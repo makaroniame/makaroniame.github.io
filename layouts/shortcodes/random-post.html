@@ -1,0 +1,20 @@
+<!-- 
+Taken and modified from:
+	https://blog.douchi.space/hugo-random-post-en/#gsc.tab=0
+ -->
+<script type="text/javascript">
+
+const pages = [
+{{ range (where site.RegularPages "Type" "posts") }}
+	{
+	"url":"{{ .RelPermalink }}?utm_source=random",
+	"title":"{{ .Title }}",
+	"readingTime":"{{ partial "custom/readingtime.html" . }}",
+	"type":"{{ .Type }}",
+	},
+{{ end -}}
+];
+const rand = Math.floor(Math.random() * pages.length);
+window.location = pages[rand]["url"]
+
+</script>
