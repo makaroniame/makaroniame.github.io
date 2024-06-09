@@ -16,3 +16,12 @@ summary: |-
   μην τις αγαπάει αφού έφτιαχναν το πιο
   <span class="bt-span-honey">εξαίσιο, υπέροχο και θρεπτικό</span> μέλι!
 ---
+
+{{< rawhtml >}}
+<!-- 
+JavaScript redirect
+ -->
+<script>
+	window.location = window.location.origin + "/melissa"
+</script>
+{{</ rawhtml >}}
