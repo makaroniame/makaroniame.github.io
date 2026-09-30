@@ -1,5 +1,5 @@
 baseURL = 'http://makaronia.me/'
-languageCode = 'gr-GR'
+locale = 'el-GR'
 defaultContentLanguage = "gr"
 defaultContentLang = "gr"
 title = 'Μακαρόνια με...'
@@ -31,8 +31,11 @@ custom_js = [
 	"/js/onload.js",
 ]
 
-[ markup.goldmark.extensions ]
-    table = true
+[markup.goldmark.extensions]
+  table = true
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [[menu.nav]]
 name = "Μπλόγκ"
@@ -63,3 +66,6 @@ weight = 5
 name = "Άρεσές"
 url = "/rss"
 weight = 6
+
+[security]
+allowContent = ['.*']
