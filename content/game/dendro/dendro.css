@@ -1,0 +1,2306 @@
+/* Dendro page bundle styles. */
+@font-face {
+  font-family: "Patrick Hand";
+  src: url("/fonts/patrick-hand-regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
+:root {
+  --dendro-ink: #26362a;
+  --dendro-leaf: #58764a;
+  --dendro-leaf-dark: #344c31;
+  --dendro-paper: rgba(255, 254, 246, 0.97);
+  --dendro-sun: #dda541;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dendro-top-anchor {
+  position: absolute;
+  top: 0;
+}
+
+#main .dendro-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 100;
+  display: inline-flex;
+  min-width: 4.5rem;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.8rem;
+  color: #fffef6;
+  background: var(--dendro-leaf-dark);
+  border: 2px solid #fffef6;
+  border-radius: 999px;
+  box-shadow: 0.2rem 0.25rem 0 rgba(38, 54, 42, 0.35);
+  font-size: 1rem;
+  line-height: 1;
+  text-decoration: none;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+#main .dendro-to-top:hover,
+#main .dendro-to-top:focus-visible {
+  color: #fffef6;
+  transform: translateY(-0.15rem);
+  box-shadow: 0.25rem 0.4rem 0 rgba(38, 54, 42, 0.35);
+}
+
+.intro-and-nav,
+#post-footer {
+  display: none;
+}
+
+.main-and-footer {
+  margin-left: 0;
+  background-color: #dfe7d7;
+  background-image: url("/img/pages/dendro/cards/tree/back.png");
+  background-repeat: repeat;
+  background-size: 144px 202px;
+  background-attachment: fixed;
+}
+
+.main-and-footer {
+  padding: clamp(1rem, 3vw, 3rem);
+}
+
+.main-and-footer > .index-container {
+  width: min(90%, 68rem);
+  max-width: 68rem !important;
+  padding: clamp(1.25rem, 4vw, 3.5rem) !important;
+  background: var(--dendro-paper);
+  border-color: var(--dendro-leaf-dark);
+  box-shadow: 0.75rem 0.75rem 0 rgba(38, 54, 42, 0.28);
+}
+
+#main {
+  color: var(--dendro-ink);
+  margin-top: 0;
+}
+
+#main p,
+#main li,
+#main td,
+#main th,
+#main caption,
+#main a {
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+}
+
+#main p,
+#main li {
+  font-size: 1.5em;
+  line-height: 1.45;
+  letter-spacing: 0.01em;
+  word-spacing: normal;
+}
+
+#main p strong,
+#main p em,
+#main p span,
+#main p a,
+#main li strong,
+#main li em,
+#main li span,
+#main li a,
+#main td strong,
+#main td em,
+#main td span,
+#main td a,
+#main th strong,
+#main th em,
+#main th span,
+#main figcaption strong,
+#main figcaption em,
+#main figcaption span,
+#main h2 span,
+#main h3 span,
+#main h4 span {
+  background-color: transparent;
+}
+
+#main p + ul,
+#main p + ol {
+  margin-top: 0.5rem;
+}
+
+.dendro-components-row {
+  display: flex;
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: stretch;
+  margin-top: 1rem;
+  background: transparent;
+}
+
+.dendro-component-figure {
+  display: flex;
+  flex: 1 1 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-width: 0;
+  margin: 0;
+  padding: 1rem;
+  background: #fffef6;
+  border: 2px solid var(--dendro-leaf-dark);
+  border-bottom-left-radius: 8px 40px;
+  border-bottom-right-radius: 40px 8px;
+  border-top-left-radius: 40px 8px;
+  border-top-right-radius: 8px 40px;
+  box-shadow: 0.25rem 0.25rem 0 rgba(38, 54, 42, 0.18);
+  text-align: center;
+}
+
+.dendro-component-copy {
+  display: grid;
+  gap: 0.25rem;
+  width: 100%;
+  margin: 0;
+  color: var(--dendro-leaf-dark);
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  line-height: 1.2;
+}
+
+.dendro-component-copy strong {
+  font-size: 1.35rem;
+}
+
+.dendro-component-copy > span {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.dendro-component-visual {
+  display: flex;
+  min-height: 4.2cm;
+  flex: 1 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75rem 0;
+  background: transparent;
+}
+
+.dendro-disk-sides {
+  width: 100%;
+}
+
+.dendro-disk-face {
+  position: relative;
+  display: block;
+  width: 1.2cm;
+  height: 1.2cm;
+  margin: 0;
+  overflow: hidden;
+  background-color: #c2a07f;
+  background-image: repeating-radial-gradient(
+    circle at 30% 35%,
+    rgba(84, 57, 35, 0.035) 0,
+    rgba(84, 57, 35, 0.035) 0.5px,
+    transparent 0.8px,
+    transparent 2px
+  );
+  border: 1px solid #84684f;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(38, 54, 42, 0.18);
+}
+
+.dendro-disk-face + .dendro-disk-face {
+  margin-left: -0.12cm;
+}
+
+.dendro-disk-face::before {
+  position: absolute;
+  inset: 22%;
+  display: block;
+  content: "";
+  background: var(--dendro-disk-symbol);
+  -webkit-mask: var(--dendro-disk-image) center / contain no-repeat;
+  mask: var(--dendro-disk-image) center / contain no-repeat;
+}
+
+.dendro-disk-water {
+  --dendro-disk-symbol: #52c7e5;
+  --dendro-disk-image: url("/img/pages/dendro/water.png");
+  transform: rotate(-7deg);
+}
+
+.dendro-disk-leaf {
+  --dendro-disk-symbol: #6fa34b;
+  --dendro-disk-image: url("/img/pages/dendro/leaf.png");
+  transform: rotate(7deg);
+}
+
+.dendro-deck-backs {
+  gap: 0.75rem;
+}
+
+.dendro-deck-backs img {
+  width: auto;
+  height: 4cm;
+  margin: 0;
+  border: 1px solid #84684f;
+  border-radius: 0.55rem;
+  box-shadow: 0.12rem 0.14rem 0.18rem rgba(38, 54, 42, 0.2);
+}
+
+#main figcaption::before {
+  content: none;
+  counter-increment: none;
+}
+
+.dendro-component-figure figcaption {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 0.6rem;
+  color: rgba(52, 76, 49, 0.8);
+  border-top: 1px dashed rgba(52, 76, 49, 0.35);
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+#main > h1:first-child {
+  margin-bottom: 0;
+  color: var(--dendro-leaf-dark);
+  font-size: clamp(3rem, 10vw, 6.5rem);
+  line-height: 0.9;
+  text-align: center;
+  text-wrap: balance;
+}
+
+#main h2,
+#main h3,
+#main h4 {
+  color: var(--dendro-leaf-dark);
+  scroll-margin-top: 1.5rem;
+}
+
+#main h2 {
+  margin-top: 3.5rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 3px solid var(--dendro-sun);
+  font-size: clamp(2.35rem, 5vw, 3.4rem);
+  line-height: 1;
+}
+
+#main h3 {
+  margin-top: 2.75rem;
+  padding-left: 0.75rem;
+  border-left: 0.35rem solid var(--dendro-leaf);
+  font-size: clamp(1.7rem, 3.5vw, 2.3rem);
+  line-height: 1.1;
+}
+
+#main h4 {
+  margin-top: 2rem;
+  font-size: clamp(1.2rem, 2.5vw, 1.55rem);
+  line-height: 1.2;
+}
+
+.dendro-stats-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: stretch;
+  justify-content: space-around;
+  margin: 0.5rem 0 1.25rem;
+  background: transparent;
+
+  margin-top: 2em;
+}
+
+.dendro-stat-figure {
+  display: inline-flex;
+  flex: 0 1 16rem;
+  gap: 0.75rem;
+  align-items: center;
+  margin: 0;
+  padding: 0.55rem 0.9rem;
+  background: #fffef6;
+  border: 2px solid var(--dendro-leaf-dark);
+  border-bottom-left-radius: 8px 35px;
+  border-bottom-right-radius: 35px 8px;
+  border-top-left-radius: 35px 8px;
+  border-top-right-radius: 8px 35px;
+  box-shadow: 0.2rem 0.2rem 0 rgba(38, 54, 42, 0.18);
+}
+
+.dendro-stat-icon {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin: 0;
+  background: var(--dendro-leaf);
+  -webkit-mask: var(--dendro-stat-icon) center / contain no-repeat;
+  mask: var(--dendro-stat-icon) center / contain no-repeat;
+}
+
+.dendro-stat-icon-players {
+  --dendro-stat-icon: url("/img/pages/dendro/players.svg");
+}
+
+.dendro-stat-icon-duration {
+  --dendro-stat-icon: url("/img/pages/dendro/clock.svg");
+}
+
+.dendro-stat-copy {
+  display: grid;
+  gap: 0;
+  margin: 0;
+  color: var(--dendro-leaf-dark);
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  line-height: 1;
+  text-align: left;
+}
+
+.dendro-stat-value {
+  display: block;
+  grid-row: 1;
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  line-height: 0.85;
+  white-space: nowrap;
+}
+
+.dendro-stat-label {
+  display: block;
+  grid-row: 2;
+  margin: 0.35rem 0 0;
+  font-size: 1.1rem;
+}
+
+.dendro-hero {
+  max-width: 48rem;
+  margin: 1.5rem auto 4rem;
+  text-align: center;
+  background: transparent;
+}
+
+.dendro-hero h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  border: 0 !important;
+}
+
+.dendro-hero > p:not(.dendro-eyebrow) {
+  max-width: 38rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#main .dendro-hero-lead {
+  margin-top: 1rem;
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  line-height: 1.35;
+  text-wrap: balance;
+}
+
+#main .dendro-hero-goal {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--dendro-leaf-dark);
+  background: rgba(111, 163, 75, 0.1);
+  border: 1px dashed rgba(52, 76, 49, 0.45);
+  border-radius: 0.65rem;
+  font-size: 1.25rem;
+}
+
+.dendro-hero-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 0.75rem;
+  align-items: stretch;
+  margin: 1.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+#main .dendro-hero-step {
+  display: flex;
+  min-width: 0;
+  height: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0.8rem;
+  background: #fffef6;
+  border: 2px solid var(--dendro-hero-step-color);
+  border-bottom-left-radius: 7px 28px;
+  border-bottom-right-radius: 28px 7px;
+  border-top-left-radius: 28px 7px;
+  border-top-right-radius: 7px 28px;
+  box-shadow: 0.14rem 0.16rem 0 rgba(38, 54, 42, 0.14);
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.dendro-hero-step strong,
+.dendro-hero-step span {
+  display: block;
+}
+
+.dendro-hero-step strong {
+  margin: 0 0 0.08rem;
+  color: var(--dendro-hero-step-color);
+  font-size: 1.3rem;
+  line-height: 1.05;
+}
+
+.dendro-hero-step span {
+  margin: 0;
+  line-height: 1.15;
+}
+
+.dendro-hero-step-plant {
+  --dendro-hero-step-color: #6fa34b;
+}
+
+.dendro-hero-step-water {
+  --dendro-hero-step-color: #4b9eb2;
+}
+
+.dendro-hero-step-score {
+  --dendro-hero-step-color: #dda541;
+}
+
+.dendro-eyebrow {
+  margin-bottom: 0.4rem;
+  color: #a4472a;
+  font-size: 1.45rem !important;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.dendro-page-nav {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 14rem;
+  gap: 1rem;
+  align-items: stretch;
+  margin-top: 2rem;
+  background: transparent;
+}
+
+.dendro-page-nav-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.6rem;
+  background: transparent;
+}
+
+.dendro-page-nav a,
+.dendro-buy-button {
+  display: inline-flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  color: var(--dendro-leaf-dark) !important;
+  background: #fffef6 !important;
+  border: 2px solid var(--dendro-leaf-dark) !important;
+  border-radius: 999px;
+  box-shadow: 0.2rem 0.2rem 0 var(--dendro-leaf-dark);
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  font-size: 1.1rem;
+  transition: transform 150ms ease, box-shadow 150ms ease;
+}
+
+.dendro-page-nav a {
+  width: auto;
+  margin: 0;
+  text-align: center;
+}
+
+.dendro-page-nav-links a {
+  padding-right: 0.6rem;
+  padding-left: 0.6rem;
+  font-size: 1rem;
+}
+
+.dendro-page-nav .dendro-buy-link {
+  width: 14rem;
+  min-height: 3.75rem;
+  font-size: 1.3rem;
+}
+
+.dendro-page-nav a:hover,
+.dendro-page-nav a:focus-visible,
+.dendro-buy-button:hover,
+.dendro-buy-button:focus-visible {
+  transform: translate(-0.1rem, -0.1rem);
+  box-shadow: 0.35rem 0.35rem 0 var(--dendro-leaf-dark);
+}
+
+.dendro-page-nav .dendro-buy-link,
+.dendro-buy-button {
+  color: #fffef6 !important;
+  background: var(--dendro-leaf-dark) !important;
+}
+
+.dendro-anchor {
+  position: relative;
+  top: -1rem;
+  visibility: hidden;
+}
+
+.h2-container > a[href^="#"] {
+  display: none;
+}
+
+.dendro-action-rain,
+.dendro-action-fire,
+.dendro-action-water,
+.dendro-action-drought,
+.dendro-action-saw,
+.dendro-green {
+  color: var(--dendro-action-color);
+  -webkit-text-stroke: 0.008em var(--dendro-action-outline);
+  paint-order: stroke fill;
+  text-shadow: 0 0 0.025em var(--dendro-action-outline);
+}
+
+.dendro-action-rain {
+  --dendro-action-color: #52c7e5ff;
+  --dendro-action-outline: #236b7d;
+}
+
+.dendro-action-fire {
+  --dendro-action-color: #e02b16ff;
+  --dendro-action-outline: #7e160c;
+}
+
+.dendro-action-water {
+  --dendro-action-color: #4b9eb2ff;
+  --dendro-action-outline: #245765;
+}
+
+.dendro-action-drought {
+  --dendro-action-color: #a4472aff;
+  --dendro-action-outline: #572617;
+}
+
+.dendro-action-saw {
+  --dendro-action-color: #9b9b97ff;
+  --dendro-action-outline: #464b4d;
+}
+
+.dendro-green {
+  --dendro-action-color: #6fa34b;
+  --dendro-action-outline: #355525;
+}
+
+.dendro-deck-intro {
+  --dendro-deck-accent: var(--dendro-leaf);
+  --dendro-deck-tint: rgba(88, 118, 74, 0.09);
+  display: grid;
+  grid-template-columns: 8rem minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+  margin: 1rem 0 1.75rem;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  background: linear-gradient(115deg, var(--dendro-deck-tint), #fffef6 70%);
+  border: 2px solid var(--dendro-deck-accent);
+  border-bottom-left-radius: 12px 70px;
+  border-bottom-right-radius: 70px 12px;
+  border-top-left-radius: 70px 12px;
+  border-top-right-radius: 12px 70px;
+  box-shadow: 0.3rem 0.3rem 0 rgba(38, 54, 42, 0.16);
+}
+
+.dendro-deck-intro-actions {
+  --dendro-deck-accent: #a4472a;
+  --dendro-deck-tint: rgba(164, 71, 42, 0.1);
+}
+
+.dendro-deck-intro-trees {
+  --dendro-deck-accent: #6fa34b;
+  --dendro-deck-tint: rgba(111, 163, 75, 0.1);
+}
+
+.dendro-deck-intro .dendro-deck-back {
+  width: auto;
+  height: 10rem;
+  margin: 0 auto;
+  border-color: var(--dendro-deck-accent);
+  box-shadow: 0.2rem 0.25rem 0 rgba(38, 54, 42, 0.2);
+  transform: rotate(-2deg);
+}
+
+.dendro-deck-intro-trees .dendro-deck-back {
+  transform: rotate(2deg);
+}
+
+.dendro-deck-intro figcaption {
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  color: var(--dendro-ink);
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  line-height: 1.3;
+}
+
+
+.dendro-deck-intro figcaption strong {
+  color: var(--dendro-deck-accent);
+  font-size: 1.65rem;
+}
+
+.dendro-deck-intro figcaption span {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.dendro-water-states {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(0.75rem, 2vw, 1.25rem);
+  margin-top: 1.25rem;
+  background: transparent;
+}
+
+.dendro-water-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0.85rem;
+  background: #fffef6;
+  border: 2px solid var(--dendro-state-accent, var(--dendro-leaf-dark));
+  border-bottom-left-radius: 8px 45px;
+  border-bottom-right-radius: 45px 8px;
+  border-top-left-radius: 45px 8px;
+  border-top-right-radius: 8px 45px;
+  box-shadow: 0.22rem 0.22rem 0 rgba(38, 54, 42, 0.16);
+}
+
+.dendro-water-state-full {
+  --dendro-state-accent: #4b9eb2;
+}
+
+.dendro-water-state-withered {
+  --dendro-state-accent: #b68a42;
+}
+
+.dendro-water-state-dry {
+  --dendro-state-accent: #a4472a;
+}
+
+.dendro-hydration-card {
+  position: relative;
+  width: min(100%, 11rem);
+  margin: 0;
+}
+
+.dendro-hydration-card > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid var(--dendro-state-accent, var(--dendro-leaf-dark));
+  border-radius: 0.75rem;
+  box-shadow: 0.14rem 0.16rem 0.18rem rgba(38, 54, 42, 0.18);
+}
+
+.dendro-slot-disk {
+  position: absolute;
+  bottom: 1.8%;
+  width: 26%;
+  aspect-ratio: 1;
+  transform: translateX(-50%);
+  margin: 0;
+  background-color: #c2a07f;
+  background-image: repeating-radial-gradient(
+    circle at 30% 35%,
+    rgba(84, 57, 35, 0.035) 0,
+    rgba(84, 57, 35, 0.035) 0.5px,
+    transparent 0.8px,
+    transparent 2px
+  );
+  border: 1px solid #84684f;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(38, 54, 42, 0.18);
+}
+
+.dendro-slot-disk::before {
+  position: absolute;
+  inset: 24%;
+  content: "";
+  background: #52c7e5;
+  -webkit-mask: url("/img/pages/dendro/water.png") center / contain no-repeat;
+  mask: url("/img/pages/dendro/water.png") center / contain no-repeat;
+}
+
+.dendro-slot-disk-left {
+  left: 16.67%;
+}
+
+.dendro-slot-disk-center {
+  left: 50%;
+}
+
+.dendro-slot-disk-right {
+  left: 83.33%;
+}
+
+.dendro-slot-disk-upper {
+  transform: translate(-50%, -120%);
+}
+
+.dendro-water-state figcaption {
+  display: grid;
+  gap: 0.3rem;
+  width: 100%;
+  margin-top: 0.8rem;
+  color: var(--dendro-ink);
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.dendro-water-state figcaption strong {
+  color: var(--dendro-state-accent);
+  font-size: 1.35rem;
+}
+
+.dendro-water-state figcaption > span {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.dendro-phases {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.25rem, 3vw, 2rem);
+  margin: 1.75rem 0 3rem;
+  background: transparent;
+}
+
+.dendro-phase-card {
+  position: relative;
+  width: min(88%, 54rem);
+  padding: clamp(1.2rem, 5vw, 2rem) 3em;
+  background: #fffef6;
+  border: 2px solid var(--dendro-leaf-dark);
+  border-bottom-left-radius: 10px 55px;
+  border-bottom-right-radius: 55px 10px;
+  border-top-left-radius: 55px 10px;
+  border-top-right-radius: 10px 55px;
+  box-shadow: 0.3rem 0.3rem 0 rgba(38, 54, 42, 0.18);
+}
+
+.dendro-phase-card:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.dendro-phase-card:nth-child(even) {
+  align-self: flex-end;
+}
+
+.dendro-phase-header {
+  display: flex;
+  gap: clamp(0.75rem, 2vw, 1.1rem);
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.dendro-phase-number {
+  display: inline-flex;
+  width: 2.8rem;
+  height: 2.8rem;
+  flex: 0 0 2.8rem;
+  align-items: center;
+  justify-content: center;
+  color: #fffef6;
+  background: var(--dendro-leaf-dark);
+  border: 2px solid var(--dendro-leaf-dark);
+  border-radius: 48% 52% 46% 54% / 55% 44% 56% 45%;
+  box-shadow: 0.14rem 0.14rem 0 var(--dendro-sun);
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  font-size: 1.65rem;
+  line-height: 1;
+  transform: rotate(-3deg);
+}
+
+.dendro-phase-card:nth-child(even) .dendro-phase-number {
+  transform: rotate(3deg);
+}
+
+#main .dendro-phase-card h3,
+#main .dendro-phase-card h4 {
+  padding: 0;
+  border: 0;
+}
+
+#main .dendro-phase-card h3 {
+  margin: 0;
+  font-size: clamp(1.65rem, 3.5vw, 2.3rem);
+  line-height: 1.05;
+}
+
+#main .dendro-phase-card h4 {
+  margin: 1.1rem 0 0.2rem;
+  color: var(--dendro-leaf);
+  font-size: clamp(1.15rem, 2.5vw, 1.45rem);
+  line-height: 1.15;
+}
+
+.dendro-phase-body {
+  min-width: 0;
+}
+
+#main .dendro-phase-body p {
+  margin: 0.55rem 0 0;
+}
+
+#main .dendro-phase-body > :first-child {
+  margin-top: 0;
+}
+
+.dendro-phase-wide-note {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed rgba(52, 76, 49, 0.35);
+}
+
+#main .dendro-phase-wide-note h4 {
+  margin: 0 0 0.2rem;
+}
+
+#main .dendro-phase-wide-note p {
+  margin: 0.45rem 0 0;
+}
+
+#main .dendro-phase-rules {
+  display: grid;
+  gap: 0.55rem;
+  margin: 0.75rem 0 0;
+  padding-left: 1.2rem;
+}
+
+#main .dendro-phase-rules li {
+  padding-left: 0.15rem;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.dendro-phase-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(13rem, 17rem);
+  gap: clamp(1rem, 3vw, 2rem);
+  align-items: center;
+}
+
+.dendro-phase-figure {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0.75rem 0.25rem 0.25rem;
+  background: transparent;
+  text-align: center;
+}
+
+.dendro-phase-figure figcaption {
+  width: 100%;
+  margin-top: 0.9rem;
+  padding-top: 0.55rem;
+  color: rgba(52, 76, 49, 0.88);
+  border-top: 1px dashed rgba(52, 76, 49, 0.35);
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  font-size: 1.05rem;
+  line-height: 1.2;
+}
+
+.dendro-card-hand {
+  position: relative;
+  width: min(100%, 16rem);
+  height: 11.5rem;
+  margin: 0 auto;
+}
+
+.dendro-hand-card {
+  --dendro-hand-x: 0;
+  --dendro-hand-angle: 0deg;
+  position: absolute;
+  bottom: 0.35rem;
+  left: calc(50% - 3.15rem);
+  width: 6.3rem;
+  height: auto;
+  aspect-ratio: 2.5 / 3.5;
+  margin: 0;
+  border: 1px solid #5e685d;
+  border-radius: 0.65rem;
+  box-shadow: 0.2rem 0.25rem 0.3rem rgba(38, 54, 42, 0.2);
+  transform-origin: 50% 115%;
+  animation: dendro-deal-card 6s cubic-bezier(0.2, 0.75, 0.25, 1) infinite;
+}
+
+.dendro-hand-card-1 {
+  --dendro-hand-x: -4.2rem;
+  --dendro-hand-angle: -18deg;
+  z-index: 1;
+  animation-delay: 0s;
+}
+
+.dendro-hand-card-2 {
+  --dendro-hand-x: -1.45rem;
+  --dendro-hand-angle: -7deg;
+  z-index: 2;
+  animation-delay: 0.12s;
+}
+
+.dendro-hand-card-3 {
+  --dendro-hand-x: 1.45rem;
+  --dendro-hand-angle: 7deg;
+  z-index: 3;
+  animation-delay: 0.24s;
+}
+
+.dendro-hand-card-4 {
+  --dendro-hand-x: 4.2rem;
+  --dendro-hand-angle: 18deg;
+  z-index: 4;
+  animation-delay: 0.36s;
+}
+
+@keyframes dendro-deal-card {
+  0%,
+  5% {
+    opacity: 0;
+    transform: translate(0, 1.5rem) rotate(0deg) scale(0.86);
+  }
+
+  16%,
+  82% {
+    opacity: 1;
+    transform: translateX(var(--dendro-hand-x)) rotate(var(--dendro-hand-angle)) scale(1);
+  }
+
+  94%,
+  100% {
+    opacity: 0;
+    transform: translate(0, 1.5rem) rotate(0deg) scale(0.9);
+  }
+}
+
+.dendro-photosynthesis-demo {
+  position: relative;
+  width: min(100%, 9.5rem);
+  margin: 0.25rem auto;
+  overflow: visible;
+}
+
+.dendro-photosynthesis-demo > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #5e685d;
+  border-radius: 0.75rem;
+  box-shadow: 0.18rem 0.22rem 0.25rem rgba(38, 54, 42, 0.2);
+}
+
+.dendro-photosynthesis-disk-flight {
+  position: absolute;
+  top: 4.5%;
+  left: 6%;
+  display: block;
+  width: 24%;
+  aspect-ratio: 1;
+  animation: dendro-collect-photosynthesis 4.8s ease-in-out infinite;
+}
+
+.dendro-photosynthesis-disk {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #c2a07f;
+  background-image: repeating-radial-gradient(
+    circle at 30% 35%,
+    rgba(84, 57, 35, 0.035) 0,
+    rgba(84, 57, 35, 0.035) 0.5px,
+    transparent 0.8px,
+    transparent 2px
+  );
+  border: 1px solid #84684f;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(38, 54, 42, 0.18);
+  transform-origin: center;
+  animation: dendro-flip-photosynthesis 4.8s ease-in-out infinite;
+}
+
+.dendro-photosynthesis-disk::before {
+  position: absolute;
+  inset: 22%;
+  content: "";
+  background-color: #52c7e5;
+  -webkit-mask-image: url("/img/pages/dendro/water.png");
+  mask-image: url("/img/pages/dendro/water.png");
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  animation: dendro-photosynthesis-symbol 4.8s step-end infinite;
+}
+
+@keyframes dendro-flip-photosynthesis {
+  0%,
+  28% {
+    transform: scaleX(1);
+  }
+
+  38% {
+    transform: scaleX(0.04);
+  }
+
+  48%,
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes dendro-photosynthesis-symbol {
+  0%,
+  37.9% {
+    background-color: #52c7e5;
+    -webkit-mask-image: url("/img/pages/dendro/water.png");
+    mask-image: url("/img/pages/dendro/water.png");
+  }
+
+  38%,
+  100% {
+    background-color: #6fa34b;
+    -webkit-mask-image: url("/img/pages/dendro/leaf.png");
+    mask-image: url("/img/pages/dendro/leaf.png");
+  }
+}
+
+@keyframes dendro-collect-photosynthesis {
+  0%,
+  48% {
+    opacity: 1;
+    transform: translate(0, -100%) rotate(0deg);
+  }
+
+  78% {
+    opacity: 1;
+    transform: translate(200%, -200%) rotate(8deg);
+  }
+
+  88%,
+  100% {
+    opacity: 0;
+    transform: translate(300%, -225%) rotate(12deg);
+  }
+}
+
+.dendro-tree-diagram {
+  position: relative;
+  width: min(100%, 17rem);
+  height: 18.5rem;
+  margin: 0 auto;
+  transform-origin: center bottom;
+}
+
+.dendro-tree-part {
+  --dendro-tree-card-angle: 0deg;
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 5.1rem;
+  aspect-ratio: 2.5 / 3.5;
+  transform: translateX(-50%);
+}
+
+.dendro-tree-part img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  object-fit: cover;
+  background: #fff;
+  border: 1px solid #5e685d;
+  border-radius: 0.55rem;
+  box-shadow: 0.16rem 0.2rem 0.25rem rgba(38, 54, 42, 0.2);
+}
+
+.dendro-tree-part-root {
+  bottom: 0;
+  z-index: 1;
+}
+
+.dendro-tree-part-branch-left,
+.dendro-tree-part-branch-right {
+  bottom: 5.15rem;
+  z-index: 2;
+}
+
+.dendro-tree-part-branch-left {
+  left: 35%;
+  --dendro-tree-entry-x: 1.5rem;
+}
+
+.dendro-tree-part-branch-right {
+  left: 65%;
+  --dendro-tree-entry-x: -1.5rem;
+}
+
+.dendro-tree-part-leaves-left,
+.dendro-tree-part-leaves-right {
+  bottom: 10.3rem;
+  z-index: 3;
+}
+
+.dendro-tree-part-leaves-left {
+  left: 32%;
+  --dendro-tree-entry-x: 1rem;
+}
+
+.dendro-tree-part-leaves-right {
+  left: 68%;
+  --dendro-tree-entry-x: -1rem;
+}
+
+.dendro-circulation-floating-disk {
+  --dendro-circulation-start-bottom: 5.28rem;
+  --dendro-circulation-target-bottom: 15.85rem;
+  bottom: var(--dendro-circulation-start-bottom);
+  left: var(--dendro-circulation-start-left);
+  z-index: 10;
+  width: 1.326rem;
+  animation: dendro-circulate-to-leaves 8s ease-in-out infinite;
+}
+
+.dendro-circulation-left-branch-center {
+  --dendro-circulation-start-left: 35%;
+  --dendro-circulation-target-left: calc(32% - 1.5rem);
+}
+
+.dendro-circulation-right-branch-left {
+  --dendro-circulation-start-left: calc(65% - 1.7rem);
+  --dendro-circulation-target-left: calc(68% - 1.5rem);
+}
+
+.dendro-circulation-root-floating-disk {
+  --dendro-circulation-start-bottom: 1.72rem;
+  --dendro-circulation-target-bottom: 5.28rem;
+  animation-name: dendro-circulate-root-to-branches;
+}
+
+.dendro-circulation-root-upper-left {
+  --dendro-circulation-start-left: calc(50% - 1.7rem);
+  --dendro-circulation-target-left: 35%;
+}
+
+.dendro-circulation-root-upper-center {
+  --dendro-circulation-start-left: 50%;
+  --dendro-circulation-target-left: calc(65% - 1.7rem);
+}
+
+@keyframes dendro-circulate-to-leaves {
+  0% {
+    bottom: var(--dendro-circulation-start-bottom);
+    left: var(--dendro-circulation-start-left);
+    opacity: 0;
+  }
+
+  4%,
+  12% {
+    bottom: var(--dendro-circulation-start-bottom);
+    left: var(--dendro-circulation-start-left);
+    opacity: 1;
+  }
+
+  40%,
+  90% {
+    bottom: var(--dendro-circulation-target-bottom);
+    left: var(--dendro-circulation-target-left);
+    opacity: 1;
+  }
+
+  97%,
+  100% {
+    bottom: var(--dendro-circulation-target-bottom);
+    left: var(--dendro-circulation-target-left);
+    opacity: 0;
+  }
+}
+
+@keyframes dendro-circulate-root-to-branches {
+  0% {
+    bottom: var(--dendro-circulation-start-bottom);
+    left: var(--dendro-circulation-start-left);
+    opacity: 0;
+  }
+
+  4%,
+  42% {
+    bottom: var(--dendro-circulation-start-bottom);
+    left: var(--dendro-circulation-start-left);
+    opacity: 1;
+  }
+
+  72%,
+  90% {
+    bottom: var(--dendro-circulation-target-bottom);
+    left: var(--dendro-circulation-target-left);
+    opacity: 1;
+  }
+
+  97%,
+  100% {
+    bottom: var(--dendro-circulation-target-bottom);
+    left: var(--dendro-circulation-target-left);
+    opacity: 0;
+  }
+}
+
+.dendro-water-pot-demo {
+  width: min(100%, 17rem);
+  margin: 0 auto;
+}
+
+.dendro-water-pot-leaf-disk {
+  bottom: 15.85rem;
+  z-index: 10;
+  width: 1.326rem;
+}
+
+.dendro-water-pot-leaf-left {
+  left: calc(32% - 1.5rem);
+}
+
+.dendro-water-pot-leaf-right {
+  left: calc(68% - 1.5rem);
+}
+
+.dendro-water-pot-fill-disk {
+  opacity: 0;
+  clip-path: circle(0 at center);
+  animation: dendro-water-pot-fill-root 8s ease-out infinite;
+}
+
+.dendro-action-play-area {
+  position: relative;
+  width: 100%;
+  height: 6.2rem;
+  margin-top: 0.35rem;
+  border-top: 1px dashed rgba(52, 76, 49, 0.35);
+}
+
+.dendro-water-pot-action-card {
+  position: absolute;
+  bottom: 0;
+  left: 18%;
+  display: block;
+  width: 3.8rem;
+  aspect-ratio: 2.5 / 3.5;
+  background: #fff url("/img/pages/dendro/cards/action/water.png") center / cover no-repeat;
+  border: 1px solid #5e685d;
+  border-radius: 0.45rem;
+  box-shadow: 0.14rem 0.18rem 0.22rem rgba(38, 54, 42, 0.2);
+  transform: translateX(-50%);
+  animation: dendro-play-water-pot 8s ease-in-out infinite;
+}
+
+
+@keyframes dendro-water-pot-fill-root {
+  0%,
+  28% {
+    opacity: 0;
+    clip-path: circle(0 at center);
+  }
+
+  44%,
+  90% {
+    opacity: 1;
+    clip-path: circle(75% at center);
+  }
+
+  97%,
+  100% {
+    opacity: 0;
+    clip-path: circle(75% at center);
+  }
+}
+
+@keyframes dendro-play-water-pot {
+  0% {
+    left: 18%;
+    opacity: 0;
+    background-image: url("/img/pages/dendro/cards/action/water.png");
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  5% {
+    left: 18%;
+    opacity: 1;
+  }
+
+  20%,
+  48% {
+    left: 50%;
+    opacity: 1;
+    background-image: url("/img/pages/dendro/cards/action/water.png");
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  55% {
+    left: 50%;
+    opacity: 1;
+    background-image: url("/img/pages/dendro/cards/action/water.png");
+    transform: translateX(-50%) scaleX(0.04);
+  }
+
+  55.1% {
+    left: 50%;
+    opacity: 1;
+    background-image: url("/img/pages/dendro/cards/action/back.png");
+    transform: translateX(-50%) scaleX(0.04);
+  }
+
+  65% {
+    left: 50%;
+    opacity: 1;
+    background-image: url("/img/pages/dendro/cards/action/back.png");
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  80%,
+  90% {
+    left: 82%;
+    opacity: 1;
+    background-image: url("/img/pages/dendro/cards/action/back.png");
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  97%,
+  100% {
+    left: 82%;
+    opacity: 0;
+    background-image: url("/img/pages/dendro/cards/action/back.png");
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+.dendro-discard-demo {
+  position: relative;
+  width: min(100%, 17rem);
+  height: 15.5rem;
+  margin: 0 auto;
+}
+
+.dendro-discard-card,
+.dendro-discard-kept-card {
+  position: absolute;
+  top: 8rem;
+  display: block;
+  width: 5.2rem;
+  height: auto;
+  aspect-ratio: 2.5 / 3.5;
+  margin: 0;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #5e685d;
+  border-radius: 0.55rem;
+  box-shadow: 0.16rem 0.2rem 0.25rem rgba(38, 54, 42, 0.2);
+  transform: translateX(-50%) rotate(var(--dendro-discard-angle));
+}
+
+.dendro-discard-card {
+  left: var(--dendro-discard-start-left);
+  background-image: var(--dendro-discard-front);
+}
+
+.dendro-discard-trunk {
+  --dendro-discard-start-left: 34%;
+  --dendro-discard-target-left: 16%;
+  --dendro-discard-angle: -10deg;
+  --dendro-discard-front: url("/img/pages/dendro/cards/tree/trunk.png");
+  --dendro-discard-back: url("/img/pages/dendro/cards/tree/back.png");
+  z-index: 1;
+  animation: dendro-discard-trunk-card 8s ease-in-out infinite;
+}
+
+.dendro-discard-rain {
+  --dendro-discard-start-left: 50%;
+  --dendro-discard-target-left: 84%;
+  --dendro-discard-angle: 0deg;
+  --dendro-discard-front: url("/img/pages/dendro/cards/action/rain.png");
+  --dendro-discard-back: url("/img/pages/dendro/cards/action/back.png");
+  z-index: 2;
+  animation: dendro-discard-rain-card 8s ease-in-out infinite;
+}
+
+.dendro-discard-kept-card {
+  left: 66%;
+  z-index: 3;
+  object-fit: cover;
+  transform: translateX(-50%) rotate(10deg);
+}
+
+@keyframes dendro-discard-rain-card {
+  0%,
+  14% {
+    top: 8rem;
+    left: var(--dendro-discard-start-left);
+    opacity: 1;
+    background-image: var(--dendro-discard-front);
+    transform: translateX(-50%) rotate(var(--dendro-discard-angle)) scaleX(1);
+  }
+
+  22% {
+    top: 8rem;
+    left: var(--dendro-discard-start-left);
+    background-image: var(--dendro-discard-front);
+    transform: translateX(-50%) rotate(0deg) scaleX(0.04);
+  }
+
+  22.1% {
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%) rotate(0deg) scaleX(0.04);
+  }
+
+  32% {
+    top: 8rem;
+    left: var(--dendro-discard-start-left);
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%) rotate(0deg) scaleX(1);
+  }
+
+  48%,
+  90% {
+    top: 0.6rem;
+    left: var(--dendro-discard-target-left);
+    opacity: 1;
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%) rotate(0deg) scaleX(1);
+  }
+
+  97%,
+  100% {
+    top: 0.6rem;
+    left: var(--dendro-discard-target-left);
+    opacity: 0;
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%) rotate(0deg) scaleX(1);
+  }
+}
+
+@keyframes dendro-discard-trunk-card {
+  0%,
+  43% {
+    top: 8rem;
+    left: var(--dendro-discard-start-left);
+    opacity: 1;
+    background-image: var(--dendro-discard-front);
+    transform: translateX(-50%) rotate(var(--dendro-discard-angle)) scaleX(1);
+  }
+
+  51% {
+    top: 8rem;
+    left: var(--dendro-discard-start-left);
+    background-image: var(--dendro-discard-front);
+    transform: translateX(-50%) rotate(0deg) scaleX(0.04);
+  }
+
+  51.1% {
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%) rotate(0deg) scaleX(0.04);
+  }
+
+  61% {
+    top: 8rem;
+    left: var(--dendro-discard-start-left);
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%) rotate(0deg) scaleX(1);
+  }
+
+  77%,
+  90% {
+    top: 0.6rem;
+    left: var(--dendro-discard-target-left);
+    opacity: 1;
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%) rotate(0deg) scaleX(1);
+  }
+
+  97%,
+  100% {
+    top: 0.6rem;
+    left: var(--dendro-discard-target-left);
+    opacity: 0;
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%) rotate(0deg) scaleX(1);
+  }
+}
+
+.dendro-prune-card {
+  --dendro-prune-back: url("/img/pages/dendro/cards/tree/back.png");
+  z-index: 12;
+  background-color: #fff;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #5e685d;
+  border-radius: 0.55rem;
+  box-shadow: 0.16rem 0.2rem 0.25rem rgba(38, 54, 42, 0.2);
+}
+
+.dendro-prune-branch-card {
+  --dendro-prune-front: url("/img/pages/dendro/cards/tree/branch.png");
+  background-image: var(--dendro-prune-front);
+  animation: dendro-prune-branch 8s ease-in-out infinite;
+}
+
+.dendro-prune-leaves-card {
+  --dendro-prune-front: url("/img/pages/dendro/cards/tree/tree.png");
+  z-index: 13;
+  background-image: var(--dendro-prune-front);
+  animation: dendro-prune-leaves 8s ease-in-out infinite;
+}
+
+.dendro-prune-leaf-water,
+.dendro-prune-right-leaf-water {
+  bottom: 15.85rem;
+  z-index: 14;
+  width: 1.326rem;
+}
+
+.dendro-prune-leaf-water {
+  left: calc(32% - 1.5rem);
+  animation: dendro-remove-leaf-water 8s ease-in-out infinite;
+}
+
+.dendro-prune-right-leaf-water {
+  left: calc(68% - 1.5rem);
+}
+
+@keyframes dendro-remove-leaf-water {
+  0%,
+  10% {
+    bottom: 15.85rem;
+    left: calc(32% - 1.5rem);
+    opacity: 1;
+  }
+
+  28%,
+  100% {
+    bottom: 17.4rem;
+    left: calc(20% - 1.5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes dendro-prune-leaves {
+  0%,
+  29% {
+    bottom: 10.3rem;
+    left: 32%;
+    opacity: 1;
+    background-image: var(--dendro-prune-front);
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  37% {
+    bottom: 10.3rem;
+    left: 32%;
+    background-image: var(--dendro-prune-front);
+    transform: translateX(-50%) scaleX(0.04);
+  }
+
+  37.1% {
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%) scaleX(0.04);
+  }
+
+  46% {
+    bottom: 10.3rem;
+    left: 32%;
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  61%,
+  90% {
+    bottom: 6.05rem;
+    left: 16%;
+    opacity: 1;
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  97%,
+  100% {
+    bottom: 6.05rem;
+    left: 10%;
+    opacity: 0;
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+@keyframes dendro-prune-branch {
+  0%,
+  49% {
+    bottom: 5.15rem;
+    left: 35%;
+    opacity: 1;
+    background-image: var(--dendro-prune-front);
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  57% {
+    bottom: 5.15rem;
+    left: 35%;
+    background-image: var(--dendro-prune-front);
+    transform: translateX(-50%) scaleX(0.04);
+  }
+
+  57.1% {
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%) scaleX(0.04);
+  }
+
+  66% {
+    bottom: 5.15rem;
+    left: 35%;
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  81%,
+  90% {
+    bottom: 6.25rem;
+    left: 14%;
+    opacity: 1;
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%) scaleX(1);
+  }
+
+  97%,
+  100% {
+    bottom: 6.25rem;
+    left: 8%;
+    opacity: 0;
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%) scaleX(1);
+  }
+}
+
+.dendro-tree-diagram-grow {
+  animation: dendro-tree-complete 8s ease-in-out infinite;
+}
+
+.dendro-tree-diagram-grow .dendro-tree-part-root img {
+  animation: dendro-tree-plant-root 8s ease-out infinite;
+}
+
+.dendro-tree-diagram-grow .dendro-tree-part-branch-left img,
+.dendro-tree-diagram-grow .dendro-tree-part-branch-right img {
+  animation: dendro-tree-add-branches 8s ease-out infinite;
+}
+
+.dendro-tree-diagram-grow .dendro-tree-part-leaves-left img,
+.dendro-tree-diagram-grow .dendro-tree-part-leaves-right img {
+  animation: dendro-tree-add-leaves 8s ease-out infinite;
+}
+
+@keyframes dendro-tree-plant-root {
+  0%,
+  3% {
+    opacity: 0;
+    transform: translateY(2.5rem) scale(0.9);
+  }
+
+  15%,
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes dendro-tree-add-branches {
+  0%,
+  21% {
+    opacity: 0;
+    transform: translate(var(--dendro-tree-entry-x), 2.5rem) scale(0.9);
+  }
+
+  38%,
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes dendro-tree-add-leaves {
+  0%,
+  43% {
+    opacity: 0;
+    transform: translate(var(--dendro-tree-entry-x), 2.5rem) scale(0.9);
+  }
+
+  60%,
+  100% {
+    opacity: 1;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes dendro-tree-complete {
+  0%,
+  67%,
+  82% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  74% {
+    opacity: 1;
+    transform: scale(1.025);
+  }
+
+  94%,
+  100% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+}
+
+#main table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: rgba(255, 255, 255, 0.72);
+  border: 2px solid var(--dendro-leaf-dark);
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+
+#main th,
+#main td {
+  padding: 0.75rem;
+  border-color: rgba(52, 76, 49, 0.3);
+  font-size: 1.1rem;
+  vertical-align: middle;
+}
+
+#main th {
+  color: #fffef6;
+  background: var(--dendro-leaf-dark);
+}
+
+.dendro-card-table-wrap,
+.dendro-player-table-wrap {
+  width: 100%;
+  margin-top: 1.5rem;
+  overflow-x: auto;
+  background: #fffef6;
+  border: 3px solid var(--dendro-leaf-dark);
+  border-bottom-left-radius: 15px 100px;
+  border-bottom-right-radius: 100px 15px;
+  border-top-left-radius: 100px 15px;
+  border-top-right-radius: 15px 100px;
+  box-shadow: 0.35rem 0.35rem 0 rgba(38, 54, 42, 0.2);
+}
+
+.dendro-card-table-wrap:focus-visible {
+  outline: 4px solid var(--dendro-sun);
+  outline-offset: 4px;
+}
+
+#main .dendro-card-table {
+  width: 100%;
+  margin: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  border-collapse: collapse;
+}
+
+#main .dendro-card-table caption,
+#main .dendro-player-table caption {
+  padding: 0.75rem 1rem;
+  color: var(--dendro-leaf-dark);
+  background: #edf2e8;
+  border-bottom: 2px solid var(--dendro-leaf-dark);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+#main .dendro-card-table th,
+#main .dendro-card-table td {
+  padding: clamp(0.75rem, 2.5vw, 1.25rem);
+  border: 0;
+  border-bottom: 1px solid rgba(52, 76, 49, 0.35);
+  text-align: left;
+}
+
+#main .dendro-card-table th:first-child,
+#main .dendro-card-table .dendro-card-cell {
+  width: 11rem;
+  border-right: 1px solid rgba(52, 76, 49, 0.35);
+  text-align: center;
+}
+
+#main .dendro-card-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+#main .dendro-card-table tbody tr:nth-child(even) {
+  background: rgba(88, 118, 74, 0.07);
+}
+
+#main .dendro-card-table strong {
+  color: var(--dendro-leaf-dark);
+  font-size: 1.1em;
+}
+
+.dendro-player-table-wrap {
+  width: min(100%, 28rem);
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+}
+
+#main .dendro-player-table {
+  width: 100%;
+  margin: 0;
+  overflow: visible;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  border-collapse: collapse;
+  font-size: 1.05rem;
+}
+
+#main .dendro-player-table th,
+#main .dendro-player-table td {
+  padding: 0.55rem 0.8rem;
+  border: 0;
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgba(52, 76, 49, 0.35);
+  text-align: center;
+}
+
+#main .dendro-player-table th:first-child,
+#main .dendro-player-table td:first-child {
+  width: 35%;
+  border-right: 1px solid rgba(52, 76, 49, 0.35);
+}
+
+#main .dendro-player-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+#main .dendro-player-table tbody tr:nth-child(even) {
+  background: rgba(88, 118, 74, 0.07);
+}
+
+.dendro-card {
+  width: auto;
+  height: 8em;
+  aspect-ratio: 2.5 / 3.5;
+  border: 0.01em solid #000;
+  border-radius: 1em;
+  margin: 0 auto;
+  box-shadow: 0.2rem 0.2rem 0 rgba(38, 54, 42, 0.2);
+}
+
+.dendro-buy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(10rem, 16rem);
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+  margin-top: 5rem;
+  padding: clamp(1.25rem, 4vw, 3rem);
+  color: var(--dendro-ink);
+  background: #edf2e8;
+  border: 3px solid var(--dendro-leaf-dark);
+  border-radius: 1.2rem;
+  box-shadow: 0.6rem 0.6rem 0 var(--dendro-sun);
+}
+
+.dendro-buy h2 {
+  margin-top: 0;
+  border: 0 !important;
+  font-size: clamp(2.25rem, 6vw, 4.5rem);
+}
+
+.dendro-stripe-badge {
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 0 0 1.25rem;
+  padding: 0.55rem 0.8rem;
+  background: #fff;
+  border: 1px solid rgba(38, 54, 42, 0.25);
+  border-radius: 0.6rem;
+}
+
+.dendro-stripe-badge span {
+  font-size: 1.1rem;
+}
+
+.dendro-stripe-badge img {
+  width: 5.5rem;
+  height: auto;
+  margin: 0;
+  border: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+.dendro-buy > img {
+  width: 100%;
+  margin: 0;
+  border: 2px solid var(--dendro-leaf-dark);
+  border-radius: 1rem;
+  box-shadow: 0.4rem 0.4rem 0 rgba(38, 54, 42, 0.25);
+  transform: rotate(2deg);
+}
+
+@media (min-width: 42.01rem) {
+  .dendro-phase-card-visual {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(13rem, 17rem);
+    column-gap: clamp(1rem, 3vw, 2rem);
+    align-items: start;
+  }
+
+  .dendro-phase-card-visual > .dendro-phase-header {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .dendro-phase-card-visual > .dendro-phase-layout {
+    display: contents;
+  }
+
+  .dendro-phase-card-visual > .dendro-phase-layout > .dendro-phase-body {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .dendro-phase-card-visual > .dendro-phase-layout > .dendro-phase-figure {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    align-self: start;
+  }
+
+  .dendro-phase-card-visual > .dendro-phase-layout > .dendro-phase-wide-note {
+    grid-column: 1 / -1;
+    grid-row: 3;
+  }
+
+  #main table th,
+  #main table td {
+    font-size: 1.2rem;
+  }
+
+  #main .dendro-player-table th,
+  #main .dendro-player-table td {
+    font-size: 1.25rem;
+  }
+
+  #main .dendro-card-table caption,
+  #main .dendro-player-table caption {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  .main-and-footer {
+    background-size: 108px 151px;
+  }
+
+  .main-and-footer {
+    padding: 1rem;
+  }
+
+  .main-and-footer > .index-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 42rem) {
+  #main .dendro-to-top {
+    right: 0.7rem;
+    bottom: 0.7rem;
+    min-width: 4rem;
+    min-height: 2.5rem;
+    padding: 0.4rem 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .dendro-hero-steps {
+    grid-template-columns: 1fr;
+  }
+
+  .dendro-phase-card,
+  .dendro-phase-card:nth-child(odd),
+  .dendro-phase-card:nth-child(even) {
+    width: 100%;
+    align-self: stretch;
+  }
+
+  .dendro-phase-header {
+    align-items: flex-start;
+  }
+
+  .dendro-phase-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dendro-phase-figure {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .dendro-card-hand {
+    width: min(100%, 17rem);
+  }
+
+  .dendro-photosynthesis-demo {
+    width: min(70%, 10rem);
+  }
+
+  .dendro-phase-number {
+    width: 2.5rem;
+    height: 2.5rem;
+    flex-basis: 2.5rem;
+    font-size: 1.45rem;
+  }
+
+  .dendro-water-states {
+    grid-template-columns: 1fr;
+  }
+
+  .dendro-hydration-card {
+    width: min(100%, 13rem);
+  }
+
+  .dendro-deck-intro {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .dendro-deck-intro figcaption,
+  .dendro-deck-intro-trees figcaption {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .dendro-deck-intro .dendro-deck-back,
+  .dendro-deck-intro-trees .dendro-deck-back {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .dendro-components-row,
+  .dendro-stats-row {
+    flex-direction: column;
+  }
+
+  .dendro-stats-row {
+    align-items: stretch;
+  }
+
+  .dendro-stat-figure {
+    width: 100%;
+    flex-basis: auto;
+    justify-content: center;
+  }
+
+  .dendro-component-figure {
+    width: 100%;
+  }
+
+  .main-and-footer {
+    padding: 0.6rem;
+  }
+
+  .main-and-footer > .index-container {
+    padding: 1.2rem !important;
+    box-shadow: 0.35rem 0.35rem 0 rgba(38, 54, 42, 0.28);
+  }
+
+  #main > h1:first-child {
+    font-size: clamp(2.8rem, 18vw, 4.75rem);
+  }
+
+  .dendro-page-nav {
+    grid-template-columns: 1fr;
+  }
+
+  .dendro-page-nav-links {
+    grid-template-columns: 1fr;
+  }
+
+  .dendro-page-nav a,
+  .dendro-page-nav .dendro-buy-link {
+    width: 100%;
+  }
+
+  #main table,
+  #main .dendro-card-table,
+  #main .dendro-player-table {
+    width: 100%;
+    min-width: 0;
+    table-layout: fixed;
+  }
+
+  #main table th,
+  #main table td {
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: normal;
+  }
+
+  .dendro-card-table-wrap,
+  .dendro-player-table-wrap {
+    overflow-x: hidden;
+  }
+
+  #main .dendro-card-table th,
+  #main .dendro-card-table td {
+    padding: 0.55rem;
+  }
+
+  #main .dendro-card-table th:first-child,
+  #main .dendro-card-table .dendro-card-cell {
+    width: 7rem;
+  }
+
+  #main .dendro-card-table .dendro-card {
+    height: 6em;
+  }
+
+  .dendro-buy {
+    grid-template-columns: 1fr;
+  }
+
+  .dendro-buy > img {
+    width: min(70%, 14rem);
+    margin-right: auto;
+    margin-left: auto;
+    grid-row: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .dendro-page-nav a,
+  .dendro-buy-button,
+  #main .dendro-to-top {
+    transition: none;
+  }
+
+  .dendro-hand-card,
+  .dendro-photosynthesis-disk-flight,
+  .dendro-photosynthesis-disk,
+  .dendro-photosynthesis-disk::before,
+  .dendro-tree-diagram-grow,
+  .dendro-tree-diagram-grow .dendro-tree-part img,
+  .dendro-circulation-floating-disk,
+  .dendro-water-pot-fill-disk,
+  .dendro-water-pot-action-card,
+  .dendro-discard-card,
+  .dendro-prune-card,
+  .dendro-prune-leaf-water {
+    animation: none;
+  }
+
+  .dendro-hand-card {
+    opacity: 1;
+    transform: translateX(var(--dendro-hand-x)) rotate(var(--dendro-hand-angle));
+  }
+
+  .dendro-photosynthesis-disk-flight {
+    transform: translate(0, -100%);
+  }
+
+  .dendro-photosynthesis-disk {
+    transform: none;
+  }
+
+  .dendro-photosynthesis-disk::before {
+    background-color: #6fa34b;
+    -webkit-mask-image: url("/img/pages/dendro/leaf.png");
+    mask-image: url("/img/pages/dendro/leaf.png");
+  }
+
+  .dendro-tree-diagram-grow,
+  .dendro-tree-diagram-grow .dendro-tree-part img {
+    opacity: 1;
+    transform: none;
+  }
+
+  .dendro-circulation-floating-disk {
+    bottom: var(--dendro-circulation-target-bottom);
+    left: var(--dendro-circulation-target-left);
+    opacity: 1;
+  }
+
+  .dendro-water-pot-fill-disk {
+    opacity: 1;
+    clip-path: circle(75% at center);
+  }
+
+  .dendro-water-pot-action-card {
+    left: 82%;
+    opacity: 1;
+    background-image: url("/img/pages/dendro/cards/action/back.png");
+    transform: translateX(-50%);
+  }
+
+  .dendro-discard-card {
+    top: 0.6rem;
+    left: var(--dendro-discard-target-left);
+    opacity: 1;
+    background-image: var(--dendro-discard-back);
+    transform: translateX(-50%);
+  }
+
+  .dendro-prune-leaf-water {
+    opacity: 0;
+  }
+
+  .dendro-prune-leaves-card {
+    bottom: 6.05rem;
+    left: 16%;
+    opacity: 1;
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%);
+  }
+
+  .dendro-prune-branch-card {
+    bottom: 6.25rem;
+    left: 18%;
+    opacity: 1;
+    background-image: var(--dendro-prune-back);
+    transform: translateX(-50%);
+  }
+}
