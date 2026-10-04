@@ -27,7 +27,7 @@ custom_css = [
 custom_js = [
 	"/js/text-vide.1.6.2.min.js",
 	"/js/text-vide.control.js",
-	"/js/dark-theme.control.js",
+	"/js/dark-theme.control.js?v=2",
 	"/js/onload.js",
 ]
 
