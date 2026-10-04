@@ -1,4 +1,22 @@
 (() => {
+  if (!window.dendroLightThemeInitialized) {
+    window.dendroLightThemeInitialized = true;
+
+    const enforceLightTheme = () => {
+      const darkTheme = document.getElementById("darkTheme");
+      if (darkTheme) darkTheme.disabled = true;
+    };
+
+    enforceLightTheme();
+
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => requestAnimationFrame(enforceLightTheme),
+      { once: true },
+    );
+    window.addEventListener("pageshow", enforceLightTheme);
+  }
+
   const faviconId = "dendro-page-favicon";
   const faviconUrl = new URL("favicon.png?v=2", document.currentScript.src).href;
 
