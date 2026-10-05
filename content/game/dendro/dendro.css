@@ -28,7 +28,7 @@ html {
   position: fixed;
   right: 1.25rem;
   bottom: 1.25rem;
-  z-index: 100;
+  z-index: 10000;
   display: inline-flex;
   min-width: 4.5rem;
   min-height: 2.75rem;
@@ -81,6 +81,7 @@ html {
 }
 
 #main {
+  position: relative;
   color: var(--dendro-ink);
   margin-top: 0;
 }
@@ -104,7 +105,8 @@ html {
 #main[lang="el"] figcaption,
 #main[lang="el"] .dendro-component-copy,
 #main[lang="el"] .dendro-stat-copy,
-#main[lang="el"] .dendro-stripe-badge {
+#main[lang="el"] .dendro-stripe-badge,
+#main[lang="el"] .dendro-manual-version {
   font-family: Pecita, "Segoe Print", cursive !important;
   word-spacing: normal;
 }
@@ -112,7 +114,8 @@ html {
 #main[lang="el"] table [data-dendro-i18n],
 #main[lang="el"] .dendro-to-top [data-dendro-i18n],
 #main[lang="el"] .dendro-page-nav a [data-dendro-i18n],
-#main[lang="el"] .dendro-buy-button [data-dendro-i18n] {
+#main[lang="el"] .dendro-buy-button [data-dendro-i18n],
+#main[lang="el"] .dendro-contact-button [data-dendro-i18n] {
   font-size: 1.1em;
 }
 
@@ -410,11 +413,19 @@ html.dendro-language-loading #main {
   visibility: hidden;
 }
 
+.dendro-top-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  justify-content: flex-end;
+}
+
 .dendro-language-switcher {
   display: flex;
   width: max-content;
   gap: 0.2rem;
-  margin: 0 0 0 auto;
+  margin: 0;
   padding: 0.25rem;
   background: rgba(255, 254, 246, 0.92);
   border: 2px solid var(--dendro-leaf-dark);
@@ -444,6 +455,25 @@ html.dendro-language-loading #main {
 #main .dendro-language-button[aria-pressed="true"] {
   color: #fffef6;
   background: var(--dendro-leaf-dark);
+}
+
+.dendro-manual-version {
+  position: absolute;
+  top: -4.5rem;
+  right: 0;
+  padding: 0.4rem 0.75rem;
+  color: var(--dendro-leaf-dark);
+  background: rgba(255, 254, 246, 0.92);
+  border: 1px dashed rgba(52, 76, 49, 0.7);
+  border-radius: 999px;
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  font-size: 1rem;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.dendro-manual-version strong {
+  background: transparent;
 }
 
 .dendro-hero {
@@ -566,7 +596,8 @@ html.dendro-language-loading #main {
 }
 
 .dendro-page-nav a,
-.dendro-buy-button {
+.dendro-buy-button,
+.dendro-contact-button {
   display: inline-flex;
   min-height: 3rem;
   align-items: center;
@@ -603,13 +634,16 @@ html.dendro-language-loading #main {
 .dendro-page-nav a:hover,
 .dendro-page-nav a:focus-visible,
 .dendro-buy-button:hover,
-.dendro-buy-button:focus-visible {
+.dendro-buy-button:focus-visible,
+.dendro-contact-button:hover,
+.dendro-contact-button:focus-visible {
   transform: translate(-0.1rem, -0.1rem);
   box-shadow: 0.35rem 0.35rem 0 var(--dendro-leaf-dark);
 }
 
 .dendro-page-nav .dendro-buy-link,
-.dendro-buy-button {
+.dendro-buy-button,
+.dendro-contact-button {
   color: #fffef6 !important;
   background: var(--dendro-leaf-dark) !important;
 }
@@ -2048,6 +2082,44 @@ html.dendro-language-loading #main {
   transform: rotate(2deg);
 }
 
+.dendro-contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  column-gap: clamp(1.25rem, 4vw, 3rem);
+  align-items: center;
+  margin-top: 3rem;
+  padding: clamp(0.85rem, 2vw, 1.25rem) clamp(1rem, 3vw, 2rem);
+  background: rgba(255, 254, 246, 0.82);
+  border: 2px dashed rgba(52, 76, 49, 0.65);
+  border-bottom-left-radius: 12px 35px;
+  border-bottom-right-radius: 35px 12px;
+  border-top-left-radius: 35px 12px;
+  border-top-right-radius: 12px 35px;
+  text-align: center;
+}
+
+.dendro-contact h2 {
+  margin: 0;
+  padding: 0;
+  border: 0 !important;
+  font-size: clamp(1.75rem, 4vw, 2.35rem);
+  line-height: 1;
+  text-align: left;
+}
+
+#main .dendro-contact p {
+  max-width: 40rem;
+  margin: 0.3rem 0 0;
+  font-size: 1.2rem;
+  line-height: 1.25;
+}
+
+.dendro-contact-button {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  min-width: min(100%, 14rem);
+}
+
 @media (min-width: 42.01rem) {
   .dendro-phase-card-visual {
     display: grid;
@@ -2112,6 +2184,10 @@ html.dendro-language-loading #main {
 }
 
 @media (max-width: 42rem) {
+  #main .dendro-language-button {
+    margin-bottom: 0;
+  }
+
   #main .dendro-to-top {
     right: 0.7rem;
     bottom: 0.7rem;
@@ -2269,6 +2345,27 @@ html.dendro-language-loading #main {
     grid-template-columns: 1fr;
   }
 
+  .dendro-contact {
+    grid-template-columns: 1fr;
+    row-gap: 0.8rem;
+    text-align: center;
+  }
+
+  .dendro-contact h2 {
+    text-align: center;
+  }
+
+  #main .dendro-contact p {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .dendro-contact-button {
+    grid-column: 1;
+    grid-row: auto;
+    width: 100%;
+  }
+
   .dendro-buy > img {
     width: min(70%, 14rem);
     margin-right: auto;
@@ -2284,6 +2381,7 @@ html.dendro-language-loading #main {
 
   .dendro-page-nav a,
   .dendro-buy-button,
+  .dendro-contact-button,
   #main .dendro-to-top {
     transition: none;
   }

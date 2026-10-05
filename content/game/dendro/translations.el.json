@@ -277,5 +277,9 @@
   "buy-now.alt.dendro-tree-card-artwork": "Εικονογράφηση κάρτας Δέντρου Dendro",
   "language-switcher.aria-label.choose-language": "Επιλογή γλώσσας",
   "language-switcher.aria-label.show-english": "Προβολή στα Αγγλικά",
-  "language-switcher.aria-label.show-greek": "Προβολή στα Ελληνικά"
+  "language-switcher.aria-label.show-greek": "Προβολή στα Ελληνικά",
+  "manual-version.text.manual-version": "Έκδοση εγχειριδίου",
+  "contact-title.text.questions-or-suggestions": "Ερωτήσεις ή προτάσεις;",
+  "contact-copy.text.rules-feedback-or-questions": "Έχεις κάποια ερώτηση ή πρόταση για τους κανόνες; Στείλε μας email! Θα χαρούμε να επικοινωνήσεις μαζί μας.",
+  "contact-button.text.contact-us": "Επικοινώνησε μαζί μας"
 }

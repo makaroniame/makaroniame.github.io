@@ -277,5 +277,9 @@
   "buy-now.alt.dendro-tree-card-artwork": "Dendro tree card artwork",
   "language-switcher.aria-label.choose-language": "Choose language",
   "language-switcher.aria-label.show-english": "Show English",
-  "language-switcher.aria-label.show-greek": "Show Greek"
+  "language-switcher.aria-label.show-greek": "Show Greek",
+  "manual-version.text.manual-version": "Manual v.",
+  "contact-title.text.questions-or-suggestions": "Questions or suggestions?",
+  "contact-copy.text.rules-feedback-or-questions": "Have a question or a suggestion about the rules? Send us an email! We would love to hear from you.",
+  "contact-button.text.contact-us": "Contact us"
 }

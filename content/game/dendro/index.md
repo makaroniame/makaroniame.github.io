@@ -6,13 +6,17 @@ sitemap: true
 share: false
 noindex: true
 layout: page
+manualVersion: "1.0"
 ---
 
 <div id="dendro-top" class="dendro-top-anchor" aria-hidden="true"></div>
 <a class="dendro-to-top" href="#dendro-top" aria-label="" data-dendro-i18n-aria-label="to-top.aria-label.back-to-the-top-of-the-dendro"><span data-dendro-i18n="to-top.text.top"></span></a>
-<div class="dendro-language-switcher" role="group" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.choose-language">
-  <button type="button" class="dendro-language-button" data-dendro-language="en" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.show-english">EN</button>
-  <button type="button" class="dendro-language-button" data-dendro-language="el" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.show-greek">ΕΛ</button>
+<div class="dendro-top-tools">
+  <div class="dendro-language-switcher" role="group" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.choose-language">
+    <button type="button" class="dendro-language-button" data-dendro-language="en" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.show-english">EN</button>
+    <button type="button" class="dendro-language-button" data-dendro-language="el" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.show-greek">ΕΛ</button>
+  </div>
+  <div class="dendro-manual-version"><span data-dendro-i18n="manual-version.text.manual-version"></span> <strong>{{< param "manualVersion" >}}</strong></div>
 </div>
 <section class="dendro-hero" aria-labelledby="dendro-intro">
   <p class="dendro-eyebrow"><span data-dendro-i18n="eyebrow.text.strategic-card-game"></span></p>
@@ -483,4 +487,9 @@ layout: page
     <a class="dendro-buy-button" href="https://buy.stripe.com/00w7sMegv36Jf0y1GH5AQ01" target="_blank" rel="noopener noreferrer"><span data-dendro-i18n="buy-button.text.get-the-game"></span></a>
   </div>
   <img src="/img/pages/dendro/cards/tree/tree.png" alt="" loading="lazy" data-dendro-i18n-alt="buy-now.alt.dendro-tree-card-artwork" />
+</section>
+<section class="dendro-contact" id="contact" aria-labelledby="dendro-contact-title">
+  <h2 id="dendro-contact-title"><span data-dendro-i18n="contact-title.text.questions-or-suggestions"></span></h2>
+  <p><span data-dendro-i18n="contact-copy.text.rules-feedback-or-questions"></span></p>
+  <a class="dendro-contact-button" href="mailto:makaroniameblog+dendro@gmail.com?subject=Dendro%20rules%20and%20feedback"><span data-dendro-i18n="contact-button.text.contact-us"></span></a>
 </section>
