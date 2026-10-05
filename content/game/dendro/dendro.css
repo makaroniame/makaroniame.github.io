@@ -94,6 +94,32 @@ html {
   font-family: "Patrick Hand", "Segoe Print", cursive;
 }
 
+#main[lang="el"] p,
+#main[lang="el"] li,
+#main[lang="el"] td,
+#main[lang="el"] th,
+#main[lang="el"] caption,
+#main[lang="el"] a,
+#main[lang="el"] button,
+#main[lang="el"] figcaption,
+#main[lang="el"] .dendro-component-copy,
+#main[lang="el"] .dendro-stat-copy,
+#main[lang="el"] .dendro-stripe-badge {
+  font-family: Pecita, "Segoe Print", cursive !important;
+  word-spacing: normal;
+}
+
+#main[lang="el"] table [data-dendro-i18n],
+#main[lang="el"] .dendro-to-top [data-dendro-i18n],
+#main[lang="el"] .dendro-page-nav a [data-dendro-i18n],
+#main[lang="el"] .dendro-buy-button [data-dendro-i18n] {
+  font-size: 1.1em;
+}
+
+#main[lang="el"] li [data-dendro-i18n] {
+  font-size: 1.2em;
+}
+
 #main p,
 #main li {
   font-size: 1.5em;
@@ -361,6 +387,10 @@ html {
   text-align: left;
 }
 
+.dendro-stat-copy [data-dendro-i18n] {
+  background-color: transparent;
+}
+
 .dendro-stat-value {
   display: block;
   grid-row: 1;
@@ -376,9 +406,49 @@ html {
   font-size: 1.1rem;
 }
 
+html.dendro-language-loading #main {
+  visibility: hidden;
+}
+
+.dendro-language-switcher {
+  display: flex;
+  width: max-content;
+  gap: 0.2rem;
+  margin: 0 0 0 auto;
+  padding: 0.25rem;
+  background: rgba(255, 254, 246, 0.92);
+  border: 2px solid var(--dendro-leaf-dark);
+  border-radius: 999px;
+  box-shadow: 0.15rem 0.18rem 0 rgba(38, 54, 42, 0.25);
+}
+
+#main .dendro-language-button {
+  min-width: 2.8rem;
+  padding: 0.35rem 0.65rem;
+  color: var(--dendro-leaf-dark);
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  font-family: "Patrick Hand", "Segoe Print", cursive;
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1;
+  cursor: pointer;
+}
+
+#main .dendro-language-button:hover,
+#main .dendro-language-button:focus-visible {
+  background: rgba(88, 118, 74, 0.13);
+}
+
+#main .dendro-language-button[aria-pressed="true"] {
+  color: #fffef6;
+  background: var(--dendro-leaf-dark);
+}
+
 .dendro-hero {
   max-width: 48rem;
-  margin: 1.5rem auto 4rem;
+  margin: 0.75rem auto 4rem;
   text-align: center;
   background: transparent;
 }

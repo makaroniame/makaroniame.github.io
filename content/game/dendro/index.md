@@ -1,288 +1,252 @@
 ---
 draft: false
 title: "Dendro"
-excerpt: "The Dendro card game manual and ordering information"
+excerpt: "Dendro"
 sitemap: true
 share: false
 noindex: true
 layout: page
 ---
 
-
 <div id="dendro-top" class="dendro-top-anchor" aria-hidden="true"></div>
-<a class="dendro-to-top" href="#dendro-top" aria-label="Back to the top of the Dendro page">↑ Top</a>
-
+<a class="dendro-to-top" href="#dendro-top" aria-label="" data-dendro-i18n-aria-label="to-top.aria-label.back-to-the-top-of-the-dendro"><span data-dendro-i18n="to-top.text.top"></span></a>
+<div class="dendro-language-switcher" role="group" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.choose-language">
+  <button type="button" class="dendro-language-button" data-dendro-language="en" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.show-english">EN</button>
+  <button type="button" class="dendro-language-button" data-dendro-language="el" aria-label="" data-dendro-i18n-aria-label="language-switcher.aria-label.show-greek">ΕΛ</button>
+</div>
 <section class="dendro-hero" aria-labelledby="dendro-intro">
-  <p class="dendro-eyebrow">Strategic card game</p>
-  <h2 id="dendro-intro">Grow a forest. Keep it alive.</h2>
-  <p class="dendro-hero-lead">Build living trees card by card, keep <span class="dendro-action-water">water</span> flowing to their <span class="dendro-green">leaves</span>, and survive <span class="dendro-action-drought">drought</span>, <span class="dendro-action-fire">wildfire</span>, and <span class="dendro-action-saw">rival</span> players.</p>
-  <p class="dendro-hero-goal"><strong>Your goal:</strong> collect the most <span class="dendro-green">photosynthesis</span> points.</p>
-  <ol class="dendro-hero-steps" aria-label="The Dendro game loop">
+  <p class="dendro-eyebrow"><span data-dendro-i18n="eyebrow.text.strategic-card-game"></span></p>
+  <h2 id="dendro-intro"><span data-dendro-i18n="dendro-intro.text.grow-a-forest-keep-it-alive"></span></h2>
+  <p class="dendro-hero-lead"><span data-dendro-i18n="hero-lead.text.build-living-trees-card-by-card-keep"></span><span class="dendro-action-water"><span data-dendro-i18n="hero-lead.text.water"></span></span><span data-dendro-i18n="hero-lead.text.flowing-to-their"></span><span class="dendro-green"><span data-dendro-i18n="hero-lead.text.leaves"></span></span><span data-dendro-i18n="hero-lead.text.and-survive"></span><span class="dendro-action-drought"><span data-dendro-i18n="hero-lead.text.drought"></span></span><span data-dendro-i18n="hero-lead.text.text"></span><span class="dendro-action-fire"><span data-dendro-i18n="hero-lead.text.wildfire"></span></span><span data-dendro-i18n="hero-lead.text.and"></span><span class="dendro-action-saw"><span data-dendro-i18n="hero-lead.text.rival"></span></span><span data-dendro-i18n="hero-lead.text.players"></span></p>
+  <p class="dendro-hero-goal"><strong><span data-dendro-i18n="hero-goal.text.your-goal"></span></strong><span data-dendro-i18n="hero-goal.text.collect-the-most"></span><span class="dendro-green"><span data-dendro-i18n="hero-goal.text.photosynthesis"></span></span><span data-dendro-i18n="hero-goal.text.points"></span></p>
+  <ol class="dendro-hero-steps" aria-label="" data-dendro-i18n-aria-label="hero-steps.aria-label.the-dendro-game-loop">
     <li class="dendro-hero-step dendro-hero-step-plant">
-      <strong>1. Plant</strong>
-      <span>Build upward from roots to leaves.</span>
+      <strong><span data-dendro-i18n="hero-step.text.1-plant"></span></strong>
+      <span><span data-dendro-i18n="hero-step.text.build-upward-from-roots-to-leaves"></span></span>
     </li>
     <li class="dendro-hero-step dendro-hero-step-water">
-      <strong>2. Water</strong>
-      <span>Keep water moving through every level.</span>
+      <strong><span data-dendro-i18n="hero-step.text.2-water"></span></strong>
+      <span><span data-dendro-i18n="hero-step.text.keep-water-moving-through-every-level"></span></span>
     </li>
     <li class="dendro-hero-step dendro-hero-step-score">
-      <strong>3. Score</strong>
-      <span>Turn water on leaves into points.</span>
+      <strong><span data-dendro-i18n="hero-step.text.3-score"></span></strong>
+      <span><span data-dendro-i18n="hero-step.text.turn-water-on-leaves-into-points"></span></span>
     </li>
   </ol>
-  <nav class="dendro-page-nav" aria-label="Dendro page sections">
+  <nav class="dendro-page-nav" aria-label="" data-dendro-i18n-aria-label="page-nav.aria-label.dendro-page-sections">
     <div class="dendro-page-nav-links">
-      <a href="#game-manual">Read the Rules</a>
-      <a href="#card-reference">Card Explanations</a>
-      <a href="#turn-phases">Turn Phases</a>
+      <a href="#game-manual"><span data-dendro-i18n="page-nav-links.text.read-the-rules"></span></a>
+      <a href="#card-reference"><span data-dendro-i18n="page-nav-links.text.card-explanations"></span></a>
+      <a href="#turn-phases"><span data-dendro-i18n="page-nav-links.text.turn-phases"></span></a>
     </div>
-    <a class="dendro-buy-link" href="#buy-now">Get Dendro!</a>
+    <a class="dendro-buy-link" href="#buy-now"><span data-dendro-i18n="buy-link.text.get-dendro"></span></a>
   </nav>
 </section>
-
 <div id="game-manual" class="dendro-anchor" aria-hidden="true"></div>
-
-# Game Manual
-
-## Parts and Components
-
-<p>This card game consists of:</p>
-
+<h1 id="game-manual"><span data-dendro-i18n="game-manual.text.game-manual"></span></h1>
+<h2 id="parts-and-components"><span data-dendro-i18n="parts-and-components.text.parts-and-components"></span></h2>
+<p><span data-dendro-i18n="page.text.this-card-game-consists-of"></span></p>
 <div class="dendro-components-row">
   <figure class="dendro-component-figure" aria-labelledby="dendro-disk-caption">
     <div class="dendro-component-copy">
-      <strong>70 double-sided disks</strong>
-      <span><span class="dendro-action-water">Water</span> on one side, <span class="dendro-green">photosynthesis</span> on the other.</span>
+      <strong><span data-dendro-i18n="component-copy.text.70-double-sided-disks"></span></strong>
+      <span><span class="dendro-action-water"><span data-dendro-i18n="component-copy.text.water"></span></span><span data-dendro-i18n="component-copy.text.on-one-side"></span><span class="dendro-green"><span data-dendro-i18n="component-copy.text.photosynthesis"></span></span><span data-dendro-i18n="component-copy.text.on-the-other"></span></span>
     </div>
-    <div class="dendro-component-visual dendro-disk-sides" aria-label="The two sides of one Dendro disk">
-      <span class="dendro-disk-face dendro-disk-water" role="img" aria-label="Water side: a light-blue water drop"></span>
-      <span class="dendro-disk-face dendro-disk-leaf" role="img" aria-label="Photosynthesis side: a green leaf"></span>
+    <div class="dendro-component-visual dendro-disk-sides" aria-label="" data-dendro-i18n-aria-label="component-visual.aria-label.the-two-sides-of-one-dendro-disk">
+      <span class="dendro-disk-face dendro-disk-water" role="img" aria-label="" data-dendro-i18n-aria-label="disk-face.aria-label.water-side-a-light-blue-water-drop"></span>
+      <span class="dendro-disk-face dendro-disk-leaf" role="img" aria-label="" data-dendro-i18n-aria-label="disk-face.aria-label.photosynthesis-side-a-green-leaf"></span>
     </div>
-    <figcaption id="dendro-disk-caption">Water and photosynthesis faces of one disk.</figcaption>
+    <figcaption id="dendro-disk-caption"><span data-dendro-i18n="dendro-disk-caption.text.water-and-photosynthesis-faces-of-one-disk"></span></figcaption>
   </figure>
-
   <figure class="dendro-component-figure" aria-labelledby="dendro-decks-caption">
     <div class="dendro-component-copy">
-      <strong>Two card decks</strong>
-      <span>Tree cards grow the forest; Action cards change its conditions.</span>
+      <strong><span data-dendro-i18n="component-copy.text.two-card-decks"></span></strong>
+      <span><span data-dendro-i18n="component-copy.text.tree-cards-grow-the-forest-action-cards"></span></span>
     </div>
     <div class="dendro-component-visual dendro-deck-backs">
-      <img src="/img/pages/dendro/cards/tree/back.png" alt="Back of the Tree deck" />
-      <img src="/img/pages/dendro/cards/action/back.png" alt="Back of the Actions deck" />
+      <img src="/img/pages/dendro/cards/tree/back.png" alt="" data-dendro-i18n-alt="component-visual.alt.back-of-the-tree-deck" />
+      <img src="/img/pages/dendro/cards/action/back.png" alt="" data-dendro-i18n-alt="component-visual.alt.back-of-the-actions-deck" />
     </div>
-    <figcaption id="dendro-decks-caption">Backs of the Tree and Action decks.</figcaption>
+    <figcaption id="dendro-decks-caption"><span data-dendro-i18n="dendro-decks-caption.text.backs-of-the-tree-and-action-decks"></span></figcaption>
   </figure>
 </div>
-
-## Players and Game Modes
-
+<h2 id="players-and-game-modes"><span data-dendro-i18n="players-and-game-modes.text.players-and-game-modes"></span></h2>
 <div class="dendro-stats-row">
-  <figure class="dendro-stat-figure" aria-label="For two to four players">
+  <figure class="dendro-stat-figure" aria-label="" data-dendro-i18n-aria-label="stat-figure.aria-label.for-two-to-four-players">
     <span class="dendro-stat-icon dendro-stat-icon-players" aria-hidden="true"></span>
     <span class="dendro-stat-copy">
-      <strong class="dendro-stat-value">2–4</strong>
-      <span class="dendro-stat-label">players</span>
+      <strong class="dendro-stat-value"><span data-dendro-i18n="stat-value.text.24"></span></strong>
+      <span class="dendro-stat-label"><span data-dendro-i18n="stat-label.text.players"></span></span>
     </span>
   </figure>
-
-  <figure class="dendro-stat-figure" aria-label="Thirty to sixty minutes per game">
+  <figure class="dendro-stat-figure" aria-label="" data-dendro-i18n-aria-label="stat-figure.aria-label.thirty-to-sixty-minutes-per-game">
     <span class="dendro-stat-icon dendro-stat-icon-duration" aria-hidden="true"></span>
     <span class="dendro-stat-copy">
-      <strong class="dendro-stat-value">30–60</strong>
-      <span class="dendro-stat-label">minutes</span>
+      <strong class="dendro-stat-value"><span data-dendro-i18n="stat-value.text.3060"></span></strong>
+      <span class="dendro-stat-label"><span data-dendro-i18n="stat-label.text.minutes"></span></span>
     </span>
   </figure>
 </div>
-
-It is advised that a different number of <span class="dendro-action-water">water</span>/<span class="dendro-green">photosynthesis</span> disks is used for different numbers of players, to keep game duration consistent.
-
+<p><span data-dendro-i18n="page.text.it-is-advised-that-a-different-number"></span><span class="dendro-action-water"><span data-dendro-i18n="page.text.water"></span></span><span data-dendro-i18n="page.text.text"></span><span class="dendro-green"><span data-dendro-i18n="page.text.photosynthesis"></span></span><span data-dendro-i18n="page.text.disks-is-used-for-different-numbers-of"></span></p>
 <div class="dendro-player-table-wrap">
   <table class="dendro-player-table">
-    <caption>Suggested game setup</caption>
+    <caption><span data-dendro-i18n="player-table.text.suggested-game-setup"></span></caption>
     <thead>
       <tr>
-        <th scope="col">Players</th>
-        <th scope="col">Suggested Disk Number</th>
+        <th scope="col"><span data-dendro-i18n="player-table.text.players"></span></th>
+        <th scope="col"><span data-dendro-i18n="player-table.text.suggested-disk-number"></span></th>
       </tr>
     </thead>
     <tbody>
-      <tr><td>2</td><td>50</td></tr>
-      <tr><td>3</td><td>60</td></tr>
-      <tr><td>4</td><td>70</td></tr>
+      <tr><td><span data-dendro-i18n="player-table.text.2"></span></td><td><span data-dendro-i18n="player-table.text.50"></span></td></tr>
+      <tr><td><span data-dendro-i18n="player-table.text.3"></span></td><td><span data-dendro-i18n="player-table.text.60"></span></td></tr>
+      <tr><td><span data-dendro-i18n="player-table.text.4"></span></td><td><span data-dendro-i18n="player-table.text.70"></span></td></tr>
     </tbody>
   </table>
 </div>
-
-## Aim/End of the game
-
-The aim of the game is to grow trees and perform more *<span class="dendro-green">Photosynthesis</span>* than the other players.
-
-**<span class="dendro-green">Photosynthesis</span> is counted with disks, when put with their leaf side up**, and is *only* acquired by leaf cards.
-
-The game ends when the number of disks remaining in the pouch is not sufficient to fullfil a <span class="dendro-action-water">watering</span> for any player. It ends abruptly, and other actions cannot be performed.
-
-**The player with the highest number of <span class="dendro-green">photosynthesis</span> disks, when the game ends, wins!**
-
-**_Tie-breaker_**: The player with the higher number of <span class="dendro-action-water">watered</span> leaf cards.
-
+<h2 id="aimend-of-the-game"><span data-dendro-i18n="aimend-of-the-game.text.aim-end-of-the-game"></span></h2>
+<p><span data-dendro-i18n="page.text.the-aim-of-the-game-is-to"></span><em><span class="dendro-green"><span data-dendro-i18n="page.text.photosynthesis-2"></span></span></em><span data-dendro-i18n="page.text.than-the-other-players"></span></p>
+<p><strong><span class="dendro-green"><span data-dendro-i18n="page.text.photosynthesis-2"></span></span><span data-dendro-i18n="page.text.is-counted-with-disks-when-put-with"></span></strong><span data-dendro-i18n="page.text.and-is"></span><em><span data-dendro-i18n="page.text.only"></span></em><span data-dendro-i18n="page.text.acquired-by-leaf-cards"></span></p>
+<p><span data-dendro-i18n="page.text.the-game-ends-when-the-number-of"></span><span class="dendro-action-water"><span data-dendro-i18n="page.text.watering"></span></span><span data-dendro-i18n="page.text.for-any-player-it-ends-abruptly-and"></span></p>
+<p><strong><span data-dendro-i18n="page.text.the-player-with-the-highest-number-of"></span><span class="dendro-green"><span data-dendro-i18n="page.text.photosynthesis"></span></span><span data-dendro-i18n="page.text.disks-when-the-game-ends-wins"></span></strong></p>
+<p><strong><em><span data-dendro-i18n="page.text.tie-breaker"></span></em></strong><span data-dendro-i18n="page.text.the-player-with-the-higher-number-of"></span><span class="dendro-action-water"><span data-dendro-i18n="page.text.watered"></span></span><span data-dendro-i18n="page.text.leaf-cards"></span></p>
 <div id="card-reference" class="dendro-anchor" aria-hidden="true"></div>
-
-## Card Explanations
-
-### Actions and Action Cards
-
+<h2 id="card-explanations"><span data-dendro-i18n="card-explanations.text.card-explanations"></span></h2>
+<h3 id="actions-and-action-cards"><span data-dendro-i18n="actions-and-action-cards.text.actions-and-action-cards"></span></h3>
 <figure class="dendro-deck-intro dendro-deck-intro-actions">
-  <img class="dendro-card dendro-deck-back" src="/img/pages/dendro/cards/action/back.png" alt="Back of a Dendro action card" />
+  <img class="dendro-card dendro-deck-back" src="/img/pages/dendro/cards/action/back.png" alt="" data-dendro-i18n-alt="deck-intro.alt.back-of-a-dendro-action-card" />
   <figcaption>
-    <strong>The Actions deck</strong>
-    <span>Water and protect your trees—or reshape the forest with pruning and natural hazards.</span>
+    <strong><span data-dendro-i18n="deck-intro.text.the-actions-deck"></span></strong>
+    <span><span data-dendro-i18n="deck-intro.text.water-and-protect-your-treesor-reshape-the"></span></span>
   </figcaption>
 </figure>
-
-<div class="dendro-card-table-wrap" tabindex="0" role="region" aria-label="Action cards reference">
+<div class="dendro-card-table-wrap" tabindex="0" role="region" aria-label="" data-dendro-i18n-aria-label="card-table-wrap.aria-label.action-cards-reference">
   <table class="dendro-card-table">
-    <caption>Action cards</caption>
+    <caption><span data-dendro-i18n="card-table.text.action-cards"></span></caption>
     <thead>
       <tr>
-        <th scope="col">Card</th>
-        <th scope="col">Description</th>
+        <th scope="col"><span data-dendro-i18n="card-table.text.card"></span></th>
+        <th scope="col"><span data-dendro-i18n="card-table.text.description"></span></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/rain.png" alt="Dendro Rain action card" /></td>
-        <td><strong><span class="dendro-action-rain">Rain</span>:</strong> Upon playing <em><span class="dendro-action-water">waters</span></em> all trees of the player.<br />Also <span class="dendro-action-water">waters</span> <em>every</em> tree of all players.</td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/rain.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-rain-action-card" /></td>
+        <td><strong><span class="dendro-action-rain"><span data-dendro-i18n="card-table.text.rain"></span></span><span data-dendro-i18n="card-table.text.text"></span></strong><span data-dendro-i18n="card-table.text.upon-playing"></span><em><span class="dendro-action-water"><span data-dendro-i18n="card-table.text.waters"></span></span></em><span data-dendro-i18n="card-table.text.all-trees-of-the-player"></span><br /><span data-dendro-i18n="card-table.text.also"></span><span class="dendro-action-water"><span data-dendro-i18n="card-table.text.waters"></span></span> <em><span data-dendro-i18n="card-table.text.every"></span></em><span data-dendro-i18n="card-table.text.tree-of-all-players"></span></td>
       </tr>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/water.png" alt="Dendro Water Pot action card" /></td>
-        <td><strong><span class="dendro-action-water">Water Pot</span>:</strong> <span class="dendro-action-water">Waters</span> a single tree of a player.</td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/water.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-water-pot-action-card" /></td>
+        <td><strong><span class="dendro-action-water"><span data-dendro-i18n="card-table.text.water-pot"></span></span><span data-dendro-i18n="card-table.text.text"></span></strong> <span class="dendro-action-water"><span data-dendro-i18n="card-table.text.waters-2"></span></span><span data-dendro-i18n="card-table.text.a-single-tree-of-a-player"></span></td>
       </tr>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/saw.png" alt="Dendro Saw action card" /></td>
-        <td><strong><span class="dendro-action-saw">Saw</span>:</strong> Prunes one of the highest parts of a tree (own or another player's).<br />The pruned card is added to the players hand.</td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/saw.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-saw-action-card" /></td>
+        <td><strong><span class="dendro-action-saw"><span data-dendro-i18n="card-table.text.saw"></span></span><span data-dendro-i18n="card-table.text.text"></span></strong><span data-dendro-i18n="card-table.text.prunes-one-of-the-highest-parts-of"></span><br /><span data-dendro-i18n="card-table.text.the-pruned-card-is-added-to-the"></span><span class="dendro-action-saw"><span data-dendro-i18n="card-table.text.saw"></span></span></td>
       </tr>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/drought.png" alt="Dendro Drought action card" /></td>
-        <td><strong><span class="dendro-action-drought">Drought</span>:</strong> Removes one <span class="dendro-action-water">water</span> disk from each card on the field, <em>except</em> of the leaf cards of the player.</td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/drought.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-drought-action-card" /></td>
+        <td><strong><span class="dendro-action-drought"><span data-dendro-i18n="card-table.text.drought"></span></span><span data-dendro-i18n="card-table.text.text"></span></strong><span data-dendro-i18n="card-table.text.removes-one"></span><span class="dendro-action-water"><span data-dendro-i18n="card-table.text.water"></span></span><span data-dendro-i18n="card-table.text.disk-from-each-card-on-the-field"></span><em><span data-dendro-i18n="card-table.text.except"></span></em><span data-dendro-i18n="card-table.text.of-the-leaf-cards-of-the-player"></span></td>
       </tr>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/fire.png" alt="Dendro Wildfire action card" /></td>
-        <td><strong><span class="dendro-action-fire">Wildfire</span>:</strong> Instantly <em>burns</em> all cards on the field that are withered or dried-up.</td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/action/fire.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-wildfire-action-card" /></td>
+        <td><strong><span class="dendro-action-fire"><span data-dendro-i18n="card-table.text.wildfire"></span></span><span data-dendro-i18n="card-table.text.text"></span></strong><span data-dendro-i18n="card-table.text.instantly"></span><em><span data-dendro-i18n="card-table.text.burns"></span></em><span data-dendro-i18n="card-table.text.all-cards-on-the-field-that-are"></span></td>
       </tr>
     </tbody>
   </table>
 </div>
-
-#### <em><span class="dendro-action-water">Watering</span></em>
-Choose a tree of yours (or another player's) and *totally fill* with <span class="dendro-action-water">water</span> disks its bottom card (and only that one).
-
-#### <em><span class="dendro-action-fire">Burn</span></em>
-Remove a tree card from the field along with *all* its descendants.
-
-### Trees and Tree Cards
-
+<h4 id="watering"><em><span class="dendro-action-water"><span data-dendro-i18n="watering.text.watering"></span></span></em></h4>
+<p><span data-dendro-i18n="page.text.choose-a-tree-of-yours-or-another"></span><em><span data-dendro-i18n="page.text.totally-fill"></span></em><span data-dendro-i18n="page.text.with"></span><span class="dendro-action-water"><span data-dendro-i18n="page.text.water"></span></span><span data-dendro-i18n="page.text.disks-its-bottom-card-and-only-that"></span></p>
+<h4 id="burn"><em><span class="dendro-action-fire"><span data-dendro-i18n="burn.text.burn"></span></span></em></h4>
+<p><span data-dendro-i18n="page.text.remove-a-tree-card-from-the-field"></span><em><span data-dendro-i18n="page.text.all"></span></em><span data-dendro-i18n="page.text.its-descendants"></span></p>
+<h3 id="trees-and-tree-cards"><span data-dendro-i18n="trees-and-tree-cards.text.trees-and-tree-cards"></span></h3>
 <figure class="dendro-deck-intro dendro-deck-intro-trees">
-  <img class="dendro-card dendro-deck-back" src="/img/pages/dendro/cards/tree/back.png" alt="Back of a Dendro tree card" />
+  <img class="dendro-card dendro-deck-back" src="/img/pages/dendro/cards/tree/back.png" alt="" data-dendro-i18n-alt="deck-intro.alt.back-of-a-dendro-tree-card" />
   <figcaption>
-    <strong>The Tree deck</strong>
-    <span>Play Tree cards to plant roots and grow trunks, branches and leaves on your side of the field.</span>
+    <strong><span data-dendro-i18n="deck-intro.text.the-tree-deck"></span></strong>
+    <span><span data-dendro-i18n="deck-intro.text.play-tree-cards-to-plant-roots-and"></span></span>
   </figcaption>
 </figure>
-
-<div class="dendro-card-table-wrap" tabindex="0" role="region" aria-label="Tree cards reference">
+<div class="dendro-card-table-wrap" tabindex="0" role="region" aria-label="" data-dendro-i18n-aria-label="card-table-wrap.aria-label.tree-cards-reference">
   <table class="dendro-card-table">
-    <caption>Tree cards</caption>
+    <caption><span data-dendro-i18n="card-table.text.tree-cards"></span></caption>
     <thead>
       <tr>
-        <th scope="col">Tree Card</th>
-        <th scope="col">Description</th>
+        <th scope="col"><span data-dendro-i18n="card-table.text.tree-card"></span></th>
+        <th scope="col"><span data-dendro-i18n="card-table.text.description"></span></th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/tree/root.png" alt="Dendro Root tree card" /></td>
-        <td><strong>Root:</strong> Exactly one of them can exist on the bottom of a tree.<br /><em>Can be planted</em></td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/tree/root.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-root-tree-card" /></td>
+        <td><strong><span data-dendro-i18n="card-table.text.root"></span></strong><span data-dendro-i18n="card-table.text.exactly-one-of-them-can-exist-on"></span><br /><em><span data-dendro-i18n="card-table.text.can-be-planted"></span></em></td>
       </tr>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/tree/trunk.png" alt="Dendro Trunk tree card" /></td>
-        <td><strong>Trunk:</strong> One or multiple of them can exist on top of a <em>root</em>.<br /><em>Can be planted</em></td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/tree/trunk.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-trunk-tree-card" /></td>
+        <td><strong><span data-dendro-i18n="card-table.text.trunk"></span></strong><span data-dendro-i18n="card-table.text.one-or-multiple-of-them-can-exist"></span><em><span data-dendro-i18n="card-table.text.root-2"></span></em><span data-dendro-i18n="card-table.text.text-2"></span><br /><em><span data-dendro-i18n="card-table.text.can-be-planted"></span></em></td>
       </tr>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/tree/branch.png" alt="Dendro Branch tree card" /></td>
-        <td><strong>Branch:</strong> One or multiple of them can exist on top of a <em>root</em> or <em>trunk</em>.<br /><em>Can be planted</em></td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/tree/branch.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-branch-tree-card" /></td>
+        <td><strong><span data-dendro-i18n="card-table.text.branch"></span></strong><span data-dendro-i18n="card-table.text.one-or-multiple-of-them-can-exist"></span><em><span data-dendro-i18n="card-table.text.root-2"></span></em><span data-dendro-i18n="card-table.text.or"></span><em><span data-dendro-i18n="card-table.text.trunk-2"></span></em><span data-dendro-i18n="card-table.text.text-2"></span><br /><em><span data-dendro-i18n="card-table.text.can-be-planted"></span></em></td>
       </tr>
       <tr>
-        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/tree/tree.png" alt="Dendro Leaves tree card" /></td>
-        <td><strong>Leaves:</strong> Exactly one of them can exist on top of a <em>root</em>, <em>trunk</em> or <em>branch</em>.<br /><strong><em>Cannot be planted</em></strong></td>
+        <td class="dendro-card-cell"><img class="dendro-card" src="/img/pages/dendro/cards/tree/tree.png" alt="" data-dendro-i18n-alt="card-cell.alt.dendro-leaves-tree-card" /></td>
+        <td><strong><span data-dendro-i18n="card-table.text.leaves"></span></strong><span data-dendro-i18n="card-table.text.exactly-one-of-them-can-exist-on-2"></span><em><span data-dendro-i18n="card-table.text.root-2"></span></em><span data-dendro-i18n="card-table.text.text-3"></span><em><span data-dendro-i18n="card-table.text.trunk-2"></span></em><span data-dendro-i18n="card-table.text.or"></span><em><span data-dendro-i18n="card-table.text.branch-2"></span></em><span data-dendro-i18n="card-table.text.text-2"></span><br /><strong><em><span data-dendro-i18n="card-table.text.cannot-be-planted"></span></em></strong></td>
       </tr>
     </tbody>
   </table>
 </div>
-
-
-Tree cards have *<span class="dendro-action-water">water</span> slots*, that are used to show how <span class="dendro-action-water">watered</span> or <span class="dendro-action-drought">dried-out</span> each tree part is. These slots are **covered with <span class="dendro-action-water">water</span> disks to define the level of hydration of a tree part**.
-
-**Each** tree card can independently be in one of three hydration states:
-
+<p><span data-dendro-i18n="page.text.tree-cards-have"></span><em><span class="dendro-action-water"><span data-dendro-i18n="page.text.water"></span></span><span data-dendro-i18n="page.text.slots"></span></em><span data-dendro-i18n="page.text.that-are-used-to-show-how"></span><span class="dendro-action-water"><span data-dendro-i18n="page.text.watered"></span></span><span data-dendro-i18n="page.text.or"></span><span class="dendro-action-drought"><span data-dendro-i18n="page.text.dried-out"></span></span><span data-dendro-i18n="page.text.each-tree-part-is-these-slots-are"></span><strong><span data-dendro-i18n="page.text.covered-with"></span><span class="dendro-action-water"><span data-dendro-i18n="page.text.water"></span></span><span data-dendro-i18n="page.text.disks-to-define-the-level-of-hydration"></span></strong><span data-dendro-i18n="page.text.text-2"></span></p>
+<p><strong><span data-dendro-i18n="page.text.each"></span></strong><span data-dendro-i18n="page.text.tree-card-can-independently-be-in-one"></span></p>
 <div class="dendro-water-states">
   <figure class="dendro-water-state dendro-water-state-full">
-    <div class="dendro-hydration-card" role="img" aria-label="A well-watered branch card with all three water slots covered">
+    <div class="dendro-hydration-card" role="img" aria-label="" data-dendro-i18n-aria-label="hydration-card.aria-label.a-well-watered-branch-card-with-all">
       <img src="/img/pages/dendro/cards/tree/branch.png" alt="" />
       <span class="dendro-slot-disk dendro-slot-disk-center" aria-hidden="true"></span>
       <span class="dendro-slot-disk dendro-slot-disk-right" aria-hidden="true"></span>
     </div>
     <figcaption>
-      <strong>Well-<span class="dendro-action-water">watered</span></strong>
-      <span>Every brown water slot is covered.</span>
+      <strong><span data-dendro-i18n="water-state.text.well"></span><span class="dendro-action-water"><span data-dendro-i18n="water-state.text.watered"></span></span></strong>
+      <span><span data-dendro-i18n="water-state.text.every-brown-water-slot-is-covered"></span></span>
     </figcaption>
   </figure>
-
   <figure class="dendro-water-state dendro-water-state-withered">
-    <div class="dendro-hydration-card" role="img" aria-label="A withered branch card with one water slot visible">
+    <div class="dendro-hydration-card" role="img" aria-label="" data-dendro-i18n-aria-label="hydration-card.aria-label.a-withered-branch-card-with-one-water">
       <img src="/img/pages/dendro/cards/tree/branch.png" alt="" />
       <span class="dendro-slot-disk dendro-slot-disk-right" aria-hidden="true"></span>
     </div>
     <figcaption>
-      <strong>Withered</strong>
-      <span>At least one brown water slot is visible.</span>
+      <strong><span data-dendro-i18n="water-state.text.withered"></span></strong>
+      <span><span data-dendro-i18n="water-state.text.at-least-one-brown-water-slot-is"></span></span>
     </figcaption>
   </figure>
-
   <figure class="dendro-water-state dendro-water-state-dry">
-    <div class="dendro-hydration-card" role="img" aria-label="A dried-out branch card with all three water slots visible">
+    <div class="dendro-hydration-card" role="img" aria-label="" data-dendro-i18n-aria-label="hydration-card.aria-label.a-dried-out-branch-card-with-all">
       <img src="/img/pages/dendro/cards/tree/branch.png" alt="" />
     </div>
     <figcaption>
-      <strong><span class="dendro-action-drought">Dried-out</span></strong>
-      <span>All brown water slots are visible.</span>
+      <strong><span class="dendro-action-drought"><span data-dendro-i18n="water-state.text.dried-out"></span></span></strong>
+      <span><span data-dendro-i18n="water-state.text.all-brown-water-slots-are-visible"></span></span>
     </figcaption>
   </figure>
 </div>
-
 <div id="turn-phases" class="dendro-anchor" aria-hidden="true"></div>
-
-## A Player's Turn
-
-The players can play as many cards in their turn as they want. There is **no limitation** on playing tree cards or the actions one can perform during their turn.
-
-A turn consists of *phases*, and each action can only happen in a specific phase of the turn, without exceptions.
-
+<h2 id="a-players-turn"><span data-dendro-i18n="a-players-turn.text.a-players-turn"></span></h2>
+<p><span data-dendro-i18n="page.text.the-players-can-play-as-many-cards"></span><strong><span data-dendro-i18n="page.text.no-limitation"></span></strong><span data-dendro-i18n="page.text.on-playing-tree-cards-or-the-actions"></span></p>
+<p><span data-dendro-i18n="page.text.a-turn-consists-of"></span><em><span data-dendro-i18n="page.text.phases"></span></em><span data-dendro-i18n="page.text.and-each-action-can-only-happen-in"></span></p>
 <div class="dendro-phases">
   <section class="dendro-phase-card dendro-phase-card-visual" id="phase-1-draw-cards">
     <header class="dendro-phase-header">
-      <span class="dendro-phase-number" aria-hidden="true">1</span>
-      <h3>Draw cards</h3>
+      <span class="dendro-phase-number" aria-hidden="true"><span data-dendro-i18n="phase-number.text.1"></span></span>
+      <h3><span data-dendro-i18n="phase-header.text.draw-cards"></span></h3>
     </header>
     <div class="dendro-phase-layout">
       <div class="dendro-phase-body">
-        <p>Draw from both decks <strong>until you have 2 cards from each type</strong>.</p>
-        <p>It is possible to have <strong>more than 2 cards</strong> of a type in your hand sometimes. In that case simply do not draw additional cards of that type.</p>
+        <p><span data-dendro-i18n="phase-body.text.draw-from-both-decks"></span><strong><span data-dendro-i18n="phase-body.text.until-you-have-2-cards-from-each"></span></strong><span data-dendro-i18n="phase-body.text.text"></span></p>
+        <p><span data-dendro-i18n="phase-body.text.it-is-possible-to-have"></span><strong><span data-dendro-i18n="phase-body.text.more-than-2-cards"></span></strong><span data-dendro-i18n="phase-body.text.of-a-type-in-your-hand-sometimes"></span></p>
       </div>
       <div class="dendro-phase-wide-note">
-        <h4>Running out of cards</h4>
-        <p>If either deck runs out, <strong>shuffle that deck's used cards to form the new deck</strong>.</p>
-        <p>If no cards of that type are available at all, the turn continues without drawing one. Once cards become available again, shuffle and draw them for the next player who needs one.</p>
+        <h4><span data-dendro-i18n="phase-wide-note.text.running-out-of-cards"></span></h4>
+        <p><span data-dendro-i18n="phase-wide-note.text.if-either-deck-runs-out"></span><strong><span data-dendro-i18n="phase-wide-note.text.shuffle-that-deck-s-used-cards-to"></span></strong><span data-dendro-i18n="phase-wide-note.text.text"></span></p>
+        <p><span data-dendro-i18n="phase-wide-note.text.if-no-cards-of-that-type-are"></span></p>
       </div>
       <figure class="dendro-phase-figure dendro-card-hand-figure">
         <div class="dendro-card-hand" aria-hidden="true">
@@ -291,19 +255,18 @@ A turn consists of *phases*, and each action can only happen in a specific phase
           <img class="dendro-hand-card dendro-hand-card-3" src="/img/pages/dendro/cards/tree/tree.png" alt="">
           <img class="dendro-hand-card dendro-hand-card-4" src="/img/pages/dendro/cards/action/water.png" alt="">
         </div>
-        <figcaption>Draw up to two Tree cards and two Action cards.</figcaption>
+        <figcaption><span data-dendro-i18n="phase-figure.text.draw-up-to-two-tree-cards-and"></span></figcaption>
       </figure>
     </div>
   </section>
-
   <section class="dendro-phase-card dendro-phase-card-visual" id="phase-2-photosynthesis">
     <header class="dendro-phase-header">
-      <span class="dendro-phase-number" aria-hidden="true">2</span>
-      <h3><span class="dendro-green">Photosynthesis!</span></h3>
+      <span class="dendro-phase-number" aria-hidden="true"><span data-dendro-i18n="phase-number.text.2"></span></span>
+      <h3><span class="dendro-green"><span data-dendro-i18n="phase-header.text.photosynthesis"></span></span></h3>
     </header>
     <div class="dendro-phase-layout">
       <div class="dendro-phase-body">
-        <p>If any leaf card is <span class="dendro-action-water">watered</span>, flip and collect its <span class="dendro-action-water">water</span> disks as <strong><span class="dendro-green">Photosynthesis</span> points</strong>. The leaves are left dried-out.</p>
+        <p><span data-dendro-i18n="phase-body.text.if-any-leaf-card-is"></span><span class="dendro-action-water"><span data-dendro-i18n="phase-body.text.watered"></span></span><span data-dendro-i18n="phase-body.text.flip-and-collect-its"></span><span class="dendro-action-water"><span data-dendro-i18n="phase-body.text.water"></span></span><span data-dendro-i18n="phase-body.text.disks-as"></span><strong><span class="dendro-green"><span data-dendro-i18n="phase-body.text.photosynthesis"></span></span><span data-dendro-i18n="phase-body.text.points"></span></strong><span data-dendro-i18n="phase-body.text.the-leaves-are-left-dried-out"></span></p>
       </div>
       <figure class="dendro-phase-figure dendro-photosynthesis-figure">
         <div class="dendro-photosynthesis-demo" aria-hidden="true">
@@ -312,24 +275,23 @@ A turn consists of *phases*, and each action can only happen in a specific phase
             <span class="dendro-photosynthesis-disk"></span>
           </span>
         </div>
-        <figcaption><span class="dendro-action-water">Water</span> becomes a <span class="dendro-green">Photosynthesis</span> point.</figcaption>
+        <figcaption><span class="dendro-action-water"><span data-dendro-i18n="phase-figure.text.water"></span></span><span data-dendro-i18n="phase-figure.text.becomes-a"></span><span class="dendro-green"><span data-dendro-i18n="phase-figure.text.photosynthesis"></span></span><span data-dendro-i18n="phase-figure.text.point"></span></figcaption>
       </figure>
     </div>
   </section>
-
   <section class="dendro-phase-card dendro-phase-card-visual" id="phase-3-plant-and-grow-trees">
     <header class="dendro-phase-header">
-      <span class="dendro-phase-number" aria-hidden="true">3</span>
-      <h3>Plant and Grow Trees</h3>
+      <span class="dendro-phase-number" aria-hidden="true"><span data-dendro-i18n="phase-number.text.3"></span></span>
+      <h3><span data-dendro-i18n="phase-header.text.plant-and-grow-trees"></span></h3>
     </header>
     <div class="dendro-phase-layout">
       <div class="dendro-phase-body">
-        <p>Play as many Tree cards as you like to plant new trees or extend existing ones.</p>
+        <p><span data-dendro-i18n="phase-body.text.play-as-many-tree-cards-as-you"></span></p>
         <ul class="dendro-phase-rules">
-          <li><strong>Plant:</strong> Start with a Root, Trunk or Branch - <strong>never Leaves</strong>.</li>
-          <li><strong>Grow:</strong> Place narrower parts above wider ones: <strong>Root → Trunk → Branch → Leaves</strong>. You may skip types, but never reverse the order.</li>
-          <li><strong>Branch:</strong> Multiple cards directly above the same part must be of the <strong>same type</strong>.</li>
-          <li><strong>Finish:</strong> Leaves end a growth path. A complete tree needs at least one non-leaf part and one Leaves card. Never insert cards underneath a planted tree.</li>
+          <li><strong><span data-dendro-i18n="phase-rules.text.plant"></span></strong><span data-dendro-i18n="phase-rules.text.start-with-a-root-trunk-or-branch"></span><strong><span data-dendro-i18n="phase-rules.text.never-leaves"></span></strong><span data-dendro-i18n="phase-rules.text.text"></span></li>
+          <li><strong><span data-dendro-i18n="phase-rules.text.grow"></span></strong><span data-dendro-i18n="phase-rules.text.place-narrower-parts-above-wider-ones"></span><strong><span data-dendro-i18n="phase-rules.text.root-trunk-branch-leaves"></span></strong><span data-dendro-i18n="phase-rules.text.you-may-skip-types-but-never-reverse"></span></li>
+          <!--<li><strong><span data-dendro-i18n="phase-rules.text.branch"></span></strong><span data-dendro-i18n="phase-rules.text.multiple-cards-directly-above-the-same-part"></span><strong><span data-dendro-i18n="phase-rules.text.same-type"></span></strong><span data-dendro-i18n="phase-rules.text.text"></span></li>-->
+          <li><strong><span data-dendro-i18n="phase-rules.text.finish"></span></strong><span data-dendro-i18n="phase-rules.text.leaves-end-a-growth-path-a-complete"></span></li>
         </ul>
       </div>
       <figure class="dendro-phase-figure dendro-tree-growth-figure">
@@ -350,23 +312,22 @@ A turn consists of *phases*, and each action can only happen in a specific phase
             <img src="/img/pages/dendro/cards/tree/tree.png" alt="">
           </span>
         </div>
-        <figcaption><strong>Root → Branch → Leaves</strong><br>Card types may be skipped.</figcaption>
+        <figcaption><strong><span data-dendro-i18n="phase-figure.text.root-branch-leaves"></span></strong><br><span data-dendro-i18n="phase-figure.text.card-types-may-be-skipped"></span></figcaption>
       </figure>
     </div>
   </section>
-
   <section class="dendro-phase-card dendro-phase-card-visual" id="phase-4-water-circulation">
     <header class="dendro-phase-header">
-      <span class="dendro-phase-number" aria-hidden="true">4</span>
-      <h3><span class="dendro-action-water">Water</span> Circulation</h3>
+      <span class="dendro-phase-number" aria-hidden="true"><span data-dendro-i18n="phase-number.text.4"></span></span>
+      <h3><span class="dendro-action-water"><span data-dendro-i18n="phase-header.text.water"></span></span><span data-dendro-i18n="phase-header.text.circulation"></span></h3>
     </header>
     <div class="dendro-phase-layout">
       <div class="dendro-phase-body">
-        <p>Move <span class="dendro-action-water">water</span> upward, resolving the highest cards first.</p>
+        <p><span data-dendro-i18n="phase-body.text.move"></span><span class="dendro-action-water"><span data-dendro-i18n="phase-body.text.water"></span></span><span data-dendro-i18n="phase-body.text.upward-resolving-the-highest-cards-first"></span></p>
         <ul class="dendro-phase-rules">
-          <li><strong>Move:</strong> Each topmost card takes one disk from the card directly below. Disks move only one level per turn.</li>
-          <li><strong>New cards:</strong> An empty Tree card played this turn must receive enough <span class="dendro-action-water">water</span> to avoid withering.</li>
-          <li><strong>Choose:</strong> Choose a destination only when the lower card cannot supply every card above it; otherwise every required move is mandatory.</li>
+          <li><strong><span data-dendro-i18n="phase-rules.text.move"></span></strong><span data-dendro-i18n="phase-rules.text.each-topmost-card-takes-one-disk-from"></span></li>
+          <li><strong><span data-dendro-i18n="phase-rules.text.new-cards"></span></strong><span data-dendro-i18n="phase-rules.text.an-empty-tree-card-played-this-turn"></span><span class="dendro-action-water"><span data-dendro-i18n="phase-rules.text.water"></span></span><span data-dendro-i18n="phase-rules.text.to-avoid-withering"></span></li>
+          <li><strong><span data-dendro-i18n="phase-rules.text.choose"></span></strong><span data-dendro-i18n="phase-rules.text.choose-a-destination-only-when-the-lower"></span></li>
         </ul>
       </div>
       <figure class="dendro-phase-figure dendro-water-circulation-figure">
@@ -398,20 +359,19 @@ A turn consists of *phases*, and each action can only happen in a specific phase
           <span class="dendro-slot-disk dendro-circulation-disk dendro-circulation-floating-disk dendro-circulation-root-floating-disk dendro-circulation-root-upper-left"></span>
           <span class="dendro-slot-disk dendro-circulation-disk dendro-circulation-floating-disk dendro-circulation-root-floating-disk dendro-circulation-root-upper-center"></span>
         </div>
-        <figcaption>Starting water positions before circulation.</figcaption>
+        <figcaption><span data-dendro-i18n="phase-figure.text.starting-water-positions-before-circulation"></span></figcaption>
       </figure>
     </div>
   </section>
-
   <section class="dendro-phase-card dendro-phase-card-visual" id="phase-5-playing-actions">
     <header class="dendro-phase-header">
-      <span class="dendro-phase-number" aria-hidden="true">5</span>
-      <h3>Play Actions</h3>
+      <span class="dendro-phase-number" aria-hidden="true"><span data-dendro-i18n="phase-number.text.5"></span></span>
+      <h3><span data-dendro-i18n="phase-header.text.play-actions"></span></h3>
     </header>
     <div class="dendro-phase-layout">
       <div class="dendro-phase-body">
-        <p>Play as many Action cards as you like, in any order. Resolve each card completely, then place it face-down in the used Action pile.</p>
-        <p>See <a href="#actions-and-action-cards"><em>Actions and Action Cards</em></a> for every effect.</p>
+        <p><span data-dendro-i18n="phase-body.text.play-as-many-action-cards-as-you"></span></p>
+        <p><span data-dendro-i18n="phase-body.text.see"></span><a href="#actions-and-action-cards"><em><span data-dendro-i18n="phase-body.text.actions-and-action-cards"></span></em></a><span data-dendro-i18n="phase-body.text.for-every-effect"></span></p>
       </div>
       <figure class="dendro-phase-figure dendro-water-pot-figure">
         <div class="dendro-water-pot-demo" aria-hidden="true">
@@ -449,19 +409,18 @@ A turn consists of *phases*, and each action can only happen in a specific phase
             <span class="dendro-water-pot-action-card"></span>
           </div>
         </div>
-        <figcaption>Water Pot fills the Root, then is discarded face-down.</figcaption>
+        <figcaption><span data-dendro-i18n="phase-figure.text.water-pot-fills-the-root-then-is"></span></figcaption>
       </figure>
     </div>
   </section>
-
   <section class="dendro-phase-card dendro-phase-card-visual" id="phase-6-discard-cards">
     <header class="dendro-phase-header">
-      <span class="dendro-phase-number" aria-hidden="true">6</span>
-      <h3>Discard cards</h3>
+      <span class="dendro-phase-number" aria-hidden="true"><span data-dendro-i18n="phase-number.text.6"></span></span>
+      <h3><span data-dendro-i18n="phase-header.text.discard-cards"></span></h3>
     </header>
     <div class="dendro-phase-layout">
       <div class="dendro-phase-body">
-        <p>Discard as many cards from your hand as you like, placing Tree and Action cards face-down in their matching used piles. At the beginning of your next turn, draw back up to your hand limit.</p>
+        <p><span data-dendro-i18n="phase-body.text.discard-as-many-cards-from-your-hand"></span></p>
       </div>
       <figure class="dendro-phase-figure dendro-discard-figure">
         <div class="dendro-discard-demo" aria-hidden="true">
@@ -469,21 +428,20 @@ A turn consists of *phases*, and each action can only happen in a specific phase
           <span class="dendro-discard-card dendro-discard-rain"></span>
           <img class="dendro-discard-kept-card" src="/img/pages/dendro/cards/tree/tree.png" alt="">
         </div>
-        <figcaption>Rain and Trunk are discarded; Leaves stay in hand.</figcaption>
+        <figcaption><span data-dendro-i18n="phase-figure.text.rain-and-trunk-are-discarded-leaves-stay"></span></figcaption>
       </figure>
     </div>
   </section>
-
   <section class="dendro-phase-card dendro-phase-card-visual" id="phase-7-prune-dry-parts">
     <header class="dendro-phase-header">
-      <span class="dendro-phase-number" aria-hidden="true">7</span>
-      <h3>Prune the dry parts</h3>
+      <span class="dendro-phase-number" aria-hidden="true"><span data-dendro-i18n="phase-number.text.7"></span></span>
+      <h3><span data-dendro-i18n="phase-header.text.prune-the-dry-parts"></span></h3>
     </header>
     <div class="dendro-phase-layout">
       <div class="dendro-phase-body">
-        <p>Any tree part with <strong>no <span class="dendro-action-water">water</span> disks</strong> dies. Discard it and every part growing above it, regardless of their hydration.</p>
-        <p>A tree planted this turn also dies if it was not <span class="dendro-action-water">watered</span> during Phase 5.</p>
-        <p>This phase is unrelated to the <span class="dendro-action-saw">Saw</span> card.</p>
+        <p><span data-dendro-i18n="phase-body.text.any-tree-part-with"></span><strong><span data-dendro-i18n="phase-body.text.no"></span><span class="dendro-action-water"><span data-dendro-i18n="phase-body.text.water"></span></span><span data-dendro-i18n="phase-body.text.disks"></span></strong><span data-dendro-i18n="phase-body.text.dies-discard-it-and-every-part-growing"></span></p>
+        <p><span data-dendro-i18n="phase-body.text.a-tree-planted-this-turn-also-dies"></span><span class="dendro-action-water"><span data-dendro-i18n="phase-body.text.watered"></span></span><span data-dendro-i18n="phase-body.text.during-phase-5"></span></p>
+        <p><span data-dendro-i18n="phase-body.text.this-phase-is-unrelated-to-the"></span><span class="dendro-action-saw"><span data-dendro-i18n="phase-body.text.saw"></span></span><span data-dendro-i18n="phase-body.text.card"></span></p>
       </div>
       <figure class="dendro-phase-figure dendro-prune-figure">
         <div class="dendro-tree-diagram dendro-prune-demo" aria-hidden="true">
@@ -509,21 +467,20 @@ A turn consists of *phases*, and each action can only happen in a specific phase
           <span class="dendro-slot-disk dendro-prune-leaf-water"></span>
           <span class="dendro-slot-disk dendro-prune-right-leaf-water"></span>
         </div>
-        <figcaption>A dry part and everything above it are discarded together.</figcaption>
+        <figcaption><span data-dendro-i18n="phase-figure.text.a-dry-part-and-everything-above-it"></span></figcaption>
       </figure>
     </div>
   </section>
 </div>
-
 <section class="dendro-buy" id="buy-now" aria-labelledby="buy-now-title">
   <div class="dendro-buy-copy">
-    <h2 id="buy-now-title">Get it now!</h2>
-    <p>Order your copy of the game and bring the forest to your table.</p>
+    <h2 id="buy-now-title"><span data-dendro-i18n="buy-now-title.text.get-it-now"></span></h2>
+    <p><span data-dendro-i18n="buy-copy.text.order-your-copy-of-the-game-and"></span></p>
     <div class="dendro-stripe-badge">
-      <span>Secure checkout with</span>
-      <img src="/img/pages/dendro/stripe.png" alt="Stripe" />
+      <span><span data-dendro-i18n="stripe-badge.text.secure-checkout-with"></span></span>
+      <img src="/img/pages/dendro/stripe.png" alt="" data-dendro-i18n-alt="stripe-badge.alt.stripe" />
     </div>
-    <a class="dendro-buy-button" href="https://buy.stripe.com/00w7sMegv36Jf0y1GH5AQ01" target="_blank" rel="noopener noreferrer">Get the Game</a>
+    <a class="dendro-buy-button" href="https://buy.stripe.com/00w7sMegv36Jf0y1GH5AQ01" target="_blank" rel="noopener noreferrer"><span data-dendro-i18n="buy-button.text.get-the-game"></span></a>
   </div>
-  <img src="/img/pages/dendro/cards/tree/tree.png" alt="Dendro tree card artwork" loading="lazy" />
+  <img src="/img/pages/dendro/cards/tree/tree.png" alt="" loading="lazy" data-dendro-i18n-alt="buy-now.alt.dendro-tree-card-artwork" />
 </section>
