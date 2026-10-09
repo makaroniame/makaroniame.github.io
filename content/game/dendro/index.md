@@ -484,7 +484,7 @@ manualVersion: "1.0"
       <span><span data-dendro-i18n="stripe-badge.text.secure-checkout-with"></span></span>
       <img src="/img/pages/dendro/stripe.png" alt="" data-dendro-i18n-alt="stripe-badge.alt.stripe" />
     </div>
-    <a class="dendro-buy-button" href="https://buy.stripe.com/00w7sMegv36Jf0y1GH5AQ01" target="_blank" rel="noopener noreferrer"><span data-dendro-i18n="buy-button.text.get-the-game"></span></a>
+    <a class="dendro-buy-button" href="https://buy.stripe.com/eVq4gAb4j22F7y68555AQ02" target="_blank" rel="noopener noreferrer"><span data-dendro-i18n="buy-button.text.get-the-game"></span></a>
   </div>
   <img src="/img/pages/dendro/cards/tree/tree.png" alt="" loading="lazy" data-dendro-i18n-alt="buy-now.alt.dendro-tree-card-artwork" />
 </section>
